@@ -9,33 +9,45 @@
       background-color: #FFDDD2;
       color: #006D77;
       font-family: 'Shrikhand', cursive;
+      text-align: center;
+      border-radius: 10px;
+      padding: 30px;
     }
     header img {
       float: right;
+      box-shadow: 5px 5px 5px #999;
+      border-radius: 10px;
     }
     body {
       font-family: 'Asul', sans-serif;
+    }
+    footer {
+      background-color: #FFDDD2;
+      color: #006D77;
+      border-radius: 10px;
+      text-align: center;
+      padding: 15px;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Angela L. Brunst</h1>
-    <img src="profile.jpg" alt="Angela Brunst profile picture">
+    <h1 id="name_title">Angela L. Brunst</h1>
+    <img id="profile_img" src="profile.jpg" alt="Angela Brunst profile picture">
   </header>
   <main>
-    <h2>WDD 230: Assignment Portal</h2>
+    <h2 id="class_title">WDD 230: Assignment Portal</h2>
     <ul>
-      <li>Lesson 02: Assignment Link</li>
-      <li>Lesson 03: Assignment Link</li>
-      <li>Lesson 04: link | link</li>
+      <li>Lesson 02: <a href="#">Assignment Link</a></li>
+      <li>Lesson 03: <a href="#">Assignment Link</a></li>
+      <li>Lesson 04: <a href="#">link</a> | <a href="#">link</a></li>
     </ul>
   </main>
   <footer>
     <p>&copy; 2021 | Angela L. Brunst | Arizona | <a href="https://www.byui.edu/online" target="_blank">BYU-I Online Learning</a></p>
     <p>
       "Last Updated: "
-
+      <script>document.write(document.lastModified);</script>
     </p>
   </footer>
   <script src="js/currentdate.js"></script>
