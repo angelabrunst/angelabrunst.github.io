@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Asul&family=Shrikhand&display=swap');
+header {
+    background-color: #FFDDD2;
+    color: #006D77;
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    padding: 50px;
+}
+
+body {
+    font-family: 'Asul', sans-serif;
+    padding: 20px;
+}
+
+footer {
+    background-color: #FFDDD2;
+    color: #006D77;
+    text-align: center;
+    padding: 15px;
+}
+
+#updated {
+    color: white;
+}
+
+.lesson2_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.fitts_law {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.fitts_law img {
+    max-width: 75%;
+}
+
+.hicks_law {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.hicks_law img {
+    max-width: 75%;
+}
+
+.rule_of_thirds {
+    grid-column: 3;
+    grid-row: 5;
+}
+
+.rule_of_thirds img {
+    max-width: 75%;
+}
