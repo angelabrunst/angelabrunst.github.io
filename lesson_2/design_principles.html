@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta description="Lesson 2 for Angela Brunst in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <title>Angela Brunst WDD 230: Lesson 2</title>
-    <link rel="stylesheet" href="C:\Users\Angela Brunst\Desktop\Web Dev\angelabrunst.github.io\lesson_2\css\lesson2.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="css/lesson2_small.css" type="text/css">
+    <link rel="stylesheet" href="css/lesson2_medium.css" type="text/css">
+    <link rel="stylesheet" href="css/lesson2_large.css" type="text/css">
+    <link rel="stylesheet" href="../css/normalize.css" type="text/css">
 </head>
 
 <body>
@@ -15,25 +17,33 @@
         <h1>Design Principles</h1>
     </header>
     <main class="lesson2_grid">
-        <div class="fitts_law">
-            <h2>Fitt's Law</h2>
-            <p>Ikea | <a href="https://www.ikea.com" target="_blank">IKEA.com</a></p>
-            <img src="angelabrunst.github.io\lesson_2\images\ikea_fittsLaw.PNG" alt="screenshot of Ikea homepage">
-            <p>On the home page for Ikea, the selector bar for location is noticeably larger than the "Go to" button. This size difference allows the target area to be the selector.</p>
-        </div>
-        <div class="hicks_law">
-            <h2>Hick's Law</h2>
-            <p>Netflix | <a href="https://www.netflix.com" target="_blank">Netflix.com</a></p>
-            <img src="/images/netflix_hicksLaw.PNG" alt="screenshot of Ikea homepage">
-            <p>The homepage for the kid selection in Netflix is an amazing example of Hick's Law. A user, especially one so young, could be overwhelmed by all the options. Netflix has done an amazing job at providing filters and naturally grouping movies
-                and shows together for easy viewing.</p>
-        </div>
-        <div class="rule_of_thirds">
-            <h2>Divine Portions</h2>
-            <p>Goodreads | <a href="https://www.goodreads.com" target="_blank">Goodreads.com</a></p>
-            <img src="goodreads_lawOfThirds.PNG" alt="screenshot of Ikea homepage">
-            <p>The homepage of goodreads has the images broken into the perfect portions. The divine portions is about 61%.</p>
-        </div>
+        <wrapper>
+            <div class="fitts_law">
+                <h2>Fitt's Law</h2>
+                <p>Ikea | <a href="https://www.ikea.com" target="_blank">IKEA.com</a></p>
+                <img src="images/ikea_fittsLaw.PNG" alt="screenshot of Ikea homepage">
+                <p>To simplify Fitt's Law, the bigger the button on the screen, the easier and more used it becomes. On the home page for Ikea, the selector bar for location is noticeably larger than the "Go to" button. This size difference allows the target
+                    area to be the selector.</p>
+            </div>
+        </wrapper>
+        <wrapper>
+            <div class="hicks_law">
+                <h2>Hick's Law</h2>
+                <p>Netflix | <a href="https://www.netflix.com" target="_blank">Netflix.com</a></p>
+                <img src="images/netflix_hicksLaw.PNG" alt="screenshot of Ikea homepage">
+                <p>The homepage for the kid selection in Netflix is an amazing example of Hick's Law. A user, especially one so young, could be overwhelmed by all the options. Netflix has done an amazing job at providing filters and naturally grouping movies
+                    and shows together for easy viewing.</p>
+            </div>
+        </wrapper>
+        <wrapper>
+            <div class="rule_of_thirds">
+                <h2>Divine Portions</h2>
+                <p>Goodreads | <a href="https://www.goodreads.com" target="_blank">Goodreads.com</a></p>
+                <img src="images/goodreads_lawOfThirds.PNG" alt="screenshot of Ikea homepage">
+                <p>Divine Portions, also known as "The Golden Ratio", is pleasing number of 1.618. The homepage of Goodreads has the image and text broken into the perfect portions. I was able to deduce this by dividing the full length of the screen by 1.618,
+                    and having the top image perfectly fit the measurement.</p>
+            </div>
+        </wrapper>
     </main>
     <footer>
         <p>&copy; 2021 | Angela L. Brunst | Arizona | <a href="https://www.byui.edu/online" target="_blank">BYU-I Online Learning</a></p>
