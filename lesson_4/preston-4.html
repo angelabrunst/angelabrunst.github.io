@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lesson 2 for Angela Brunst in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>The Weather Rock | Angela Brunst</title>
+    <link rel="stylesheet" href="../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/small.css" type="text/css">
+    <link rel="stylesheet" href="css/medium.css" type="text/css">
+    <link rel="stylesheet" href="css/large.css" type="text/css">
+
+</head>
+
+<body>
+    <header>
+        <img class="logo_img" src="images/weatherRockLogo.JPG" alt="The Weather Rock logo">
+        <h1 class="title">The Weather Rock</h1>
+        <p class="motto">Adventure in all weather</p>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="../index.html" class="active">Home</a></li>
+            <li><a href="preston-4.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <wrapper class="locationTitle">
+            <h2>Preston Idaho</h2>
+        </wrapper>
+        <article class="weatherSummary">
+            <img class="heroImg" src="https://picsum.photos/500" alt="Preston Hero img placeholder">
+            <h3>Weather Summary</h3>
+
+        </article>
+        <article class="fiveDayForcast">
+            <h3>Five Day Forecast</h3>
+
+        </article>
+        <article class="hikingInfo">
+            <h3>Hiking Info</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <img class="hikingIMG" src="https://picsum.photos/500" alt="Preston hiking img placeholder">
+        </article>
+    </main>
+    <footer>
+        <wrapper class="contactInfo">
+            <h3>Contact Information</h3>
+            <p>&#9993; theweatherrock@weather.org</p>
+            <p>&#9742; 1-800-888-9000</p>
+            <a href="https://www.facebook.com" target="_blank"><img class="social" src="images/facebook.png" alt="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank"><img class="social" src="images/twitter.png" alt="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="social" src="images/instagram.png" alt="Instagram"></a>
+        </wrapper>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d47365.773853470186!2d-111.91534457276165!3d42.09974162634741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8754f78c7cda6c31%3A0xf1b3b4fc465a4a3f!2sPreston%2C%20ID%2083263!5e0!3m2!1sen!2sus!4v1611692226295!5m2!1sen!2sus"
+            width="350" height="150" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <!-- <p>&copy; 2021 | Angela L. Brunst | Arizona | <a href="https://www.byui.edu/online" target="_blank">BYU-I Online Learning</a></p> -->
+        <p class="date">
+            Current Date: <span id="currentDate"></span>
+        </p>
+    </footer>
+    <script src="js/currentDate.js"></script>
+    <script src="js/hamMenu.js"></script>
+</body>
+
+</html>
