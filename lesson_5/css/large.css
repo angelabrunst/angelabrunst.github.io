@@ -1,0 +1,30 @@
+@media only screen and (min-width: 60em) {
+    h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5em;
+        margin-left: 20px;
+    }
+    nav a {
+        font-size: 1.1rem;
+    }
+    .logo_img {
+        max-width: 40%;
+    }
+    .title {
+        margin-bottom: -4em;
+    }
+    .motto {
+        margin-top: -1em;
+    }
+    .heroImg {
+        max-width: 60em;
+    }
+    .map {
+        margin: 0 5em 0 5em;
+    }
+    .contactInfo {
+        margin: 0 5em 0 5em;
+    }
+}
