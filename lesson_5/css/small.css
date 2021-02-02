@@ -143,4 +143,7 @@ main article {
 
 .map {
     margin: 2em 0 1em -5px;
+    width: "350";
+    height: "150";
+    border: 0;
 }
