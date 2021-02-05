@@ -122,17 +122,47 @@ main {
 
 .heroImg {
     max-width: 100%;
+    box-shadow: 0 0 10px #111;
+}
+
+.fiveDayForecast {
+    margin: 0 auto;
+}
+
+.forecastTable {
+    margin: 0 auto;
+    max-width: 375px;
+}
+
+.forecast {
+    float: left;
+    margin: 1.5rem;
+    border: 0.3rem solid #1F7A8C;
+    border-radius: 00.7rem;
+    justify-content: center;
+}
+
+.forecast img {
+    max-width: 14%;
 }
 
 main article {
-    margin: 0.5rem;
-    padding: 0 1rem;
+    margin: 2rem;
+    padding: 2rem;
     border: 1px solid #1F7A8C;
     background-color: #E1E5F2;
+    box-shadow: 0 0 10px #111;
+}
+
+.hikingInfo {
+    margin: 1em;
 }
 
 .hikingIMG {
+    float: right;
     width: 100%;
+    margin: 1em;
+    box-shadow: 0 0 10px #111;
 }
 
 .social {

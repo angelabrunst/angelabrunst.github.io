@@ -19,7 +19,11 @@
         margin-top: -1em;
     }
     .heroImg {
-        max-width: 60em;
+        max-width: 90%;
+    }
+    .weatherSummary {
+        top: 30em;
+        left: 15em;
     }
     .map {
         margin: 0 5em 0 5em;

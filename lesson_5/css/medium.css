@@ -32,8 +32,21 @@
         margin-bottom: -4em;
     }
     .heroImg {
-        max-width: 37.5em;
+        max-width: 90%;
+        margin: 10px auto;
+        position: relative;
     }
+    .weatherSummary {
+        border: .1em solid #022B3A;
+        position: absolute;
+        top: 22em;
+        left: 8em;
+        padding: 1.5em;
+        background: radial-gradient(#FFFFFF, #BFDBF7);
+        opacity: .8;
+        box-shadow: 0 0 30px #111;
+    }
+    main article {}
     .hikingIMG {
         float: right;
         max-width: 30%;

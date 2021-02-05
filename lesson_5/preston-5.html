@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Lesson 5 for Angela Brunst in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <title>The Weather Rock | Angela Brunst</title>
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" href="../css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/small.css" type="text/css">
     <link rel="stylesheet" href="css/medium.css" type="text/css">
@@ -36,22 +36,52 @@
             <h2>Preston Idaho</h2>
         </div>
         <img class="heroImg" src="images/prestonHero.jpg" alt="Mountains at sunrise">
-        <article class="weatherSummary">
+        <div class="weatherSummary">
             <h3>Weather Summary</h3>
-            <p>Partly cloudy</p>
             <p>Precipitation: 0%</p>
             <p>Humidity: 72%</p>
             <p>Wind: 5mph</p>
-        </article>
-        <article class="fiveDayForcast">
+        </div>
+        <div class="fiveDayForcast">
             <h3>Five Day Forecast</h3>
-
-        </article>
+            <table class="forecastTable">
+                <tr>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                </tr>
+                <tr>
+                    <td><img class="forecastImg" src="images/sunny.jpg"></td>
+                    <td><img class="forecastImg" src="images/partly_cloudy.jpg"></td>
+                    <td><img class="forecastImg" src="images/partly_cloudy.jpg"></td>
+                    <td><img class="forecastImg" src="images/cloudy.jpg"></td>
+                    <td><img class="forecastImg" src="images/snow.jpg"></td>
+                </tr>
+                <tr>
+                    <td><br>25&#176; F</td>
+                    <td><br>26&#176; F</td>
+                    <td><br>24&#176; F</td>
+                    <td><br>12&#176; F</td>
+                    <td><br>22&#176; F</td>
+                </tr>
+            </table>
+        </div>
         <article class="hikingInfo">
-            <h3>Hiking Info</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
             <img class="hikingIMG" src="images/hikingFlowers.jpg" alt="Hiking in flowers">
+            <h3>How to prepare for a full day of hiking</h3>
+            <h4>By Trent Jonas</h4>
+            <p>A day hike doesn't sound like it would require much preparation, but there are a few important things to take note of, plan for, and pack with you before you head out to the trails. If you plan to spend more than just a couple of hours out
+                hiking, especially if you are unfamiliar with the trail, make sure you've checked everything off your checklist. From taking a peek at the weather to properly packing your backpack, here are a few tips to get you ready for your trek.</p>
+            <h5>Check the weather</h5>
+            <p>Before you hit the trail for the day, you’ll need to know what kinds of conditions you’ll be dealing with. Take note of the forecast, and dress and pack accordingly. Prepare for unexpected changes: Bring a light, waterproof jacket in case
+                of unexpected rain or cool weather.</p>
+            <h5>Know where you're going</h5>
+            <p>Heading out for an all-day hike usually means you’re going to go some distance, and if you’re leaving a familiar environment or heading into the wilderness, it’s best to have a good idea of where you’re going and what kind of terrain you’ll
+                be hiking before you go. Bring along a GPS unit or a smartphone with an app like Gaia GPS to help you keep track of where you are on the trail. But never rely solely on electronics to get you by, always bring along a map (ideally a topo
+                map) and a compass in case your electronics run out of charge or fail in some way.</p>
+            <a href="https://stepoutside.org/article/how-to-prepare-for-a-full-day-of-hiking/">Full article here</a>
         </article>
     </main>
     <footer>
