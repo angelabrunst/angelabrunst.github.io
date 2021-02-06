@@ -58,6 +58,10 @@ nav a:hover {
     color: #fff;
 }
 
+.active {
+    background-color: #1F7A8C;
+}
+
 .navigation {
     list-style: none;
     padding: 0;
