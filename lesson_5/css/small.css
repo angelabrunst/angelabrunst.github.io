@@ -114,6 +114,12 @@ h2 {
     margin-top: -.5em;
 }
 
+#eventBanner {
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #E1E5F2;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -125,13 +131,17 @@ main {
     box-shadow: 0 0 10px #111;
 }
 
-.fiveDayForecast {
-    margin: 0 auto;
+.weatherSummary {
+    border: .1em solid #022B3A;
+    margin: .7rem;
+    padding: 1.5em;
+    background: radial-gradient(#FFFFFF, #BFDBF7);
+    opacity: .8;
+    box-shadow: 0 0 10px #111;
 }
 
-.forecastTable {
-    margin: 0 auto;
-    max-width: 375px;
+.fiveDayForcast {
+    display: none;
 }
 
 .forecast {

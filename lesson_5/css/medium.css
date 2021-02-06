@@ -37,16 +37,22 @@
         position: relative;
     }
     .weatherSummary {
-        border: .1em solid #022B3A;
         position: absolute;
         top: 22em;
         left: 8em;
-        padding: 1.5em;
-        background: radial-gradient(#FFFFFF, #BFDBF7);
-        opacity: .8;
         box-shadow: 0 0 30px #111;
     }
-    main article {}
+    .fiveDayForcast {
+        display: block;
+        margin: 0 auto;
+    }
+    .center {
+        text-align: center;
+    }
+    .temp {
+        text-align: center;
+        justify-content: center;
+    }
     .hikingIMG {
         float: right;
         max-width: 30%;
