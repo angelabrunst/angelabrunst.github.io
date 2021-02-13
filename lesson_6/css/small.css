@@ -184,9 +184,7 @@ main article {
     margin: 0 5px 0 5px;
 }
 
-.map {
-    margin: 2em 0 1em -5px;
-    width: 350px;
-    height: 150px;
-    border: 0;
+.map img {
+    margin: .5em auto;
+    max-width: 100%;
 }
