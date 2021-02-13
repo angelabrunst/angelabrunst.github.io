@@ -9,20 +9,8 @@
     nav a {
         font-size: 1.1rem;
     }
-    .logo_img {
-        max-width: 40%;
-    }
-    .title {
-        margin-bottom: -4em;
-    }
-    .motto {
-        margin-top: -1em;
-    }
-    .heroImg {
-        max-width: 90%;
-    }
     .weatherSummary {
-        top: 30em;
+        top: 40em;
         left: 15em;
     }
     .map {
