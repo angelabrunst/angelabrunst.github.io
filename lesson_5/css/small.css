@@ -1,11 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Scope+One&family=Trocchi&display=swap');
 body {
     font-size: 16px;
     font-family: 'Scope One', serif;
 }
 
 header {
-    /* display: grid;
-    grid-template-columns: 1fr 4fr; */
+    display: grid;
+    grid-template-columns: 1fr 4fr;
     background-color: #E1E5F2;
     padding: 10px;
 }
@@ -102,6 +103,21 @@ h2 {
     margin-left: 10px;
 }
 
+.logo_img {
+    max-width: 60%;
+    grid-column: 1;
+    margin-top: 1em;
+}
+
+.title {
+    grid-column: 2;
+}
+
+.motto {
+    grid-column: 2;
+    margin-top: -.5em;
+}
+
 #eventBanner {
     margin: 0 auto;
     padding: 1em;
@@ -109,13 +125,14 @@ h2 {
 }
 
 main {
+    display: grid;
+    grid-template-columns: 1fr;
     font-size: 0.8rem;
 }
 
-.hero {
+.heroImg {
     max-width: 100%;
     box-shadow: 0 0 10px #111;
-    margin: 0 auto;
 }
 
 .weatherSummary {

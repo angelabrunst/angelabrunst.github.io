@@ -25,18 +25,20 @@
     .navigation li:first-child {
         display: none;
     }
-    .hero {
-        max-width: 100%;
-        margin: 0 auto;
-        position: relative;
+    .logo_img {
+        max-width: 50%;
     }
-    .heroimg {
-        max-width: 100%;
-        margin: 0 auto;
+    .title {
+        margin-bottom: -4em;
+    }
+    .heroImg {
+        max-width: 90%;
+        margin: 10px auto;
+        position: relative;
     }
     .weatherSummary {
         position: absolute;
-        top: 30em;
+        top: 22em;
         left: 8em;
         box-shadow: 0 0 30px #1F7A8C;
     }
