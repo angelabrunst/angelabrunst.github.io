@@ -14,7 +14,7 @@
 
 </head>
 
-<body onload="currentDate();">
+<body onload="currentDate(); windChill();">
     <div id="eventBanner">
         <script src="js/script.js"></script>
     </div>
@@ -54,6 +54,7 @@
             <p>Precipitation: 0%</p>
             <p>Humidity: 72%</p>
             <p>Wind: 5mph</p>
+            <p>Wind Chill: <span id="windChill"></span>&#176; F</p>
         </div>
         <div class="fiveDayForcast">
             <h3 class="center">Five Day Forecast</h3>
