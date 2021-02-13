@@ -11,6 +11,7 @@
     }
     .logo_img {
         max-width: 40%;
+        margin: 1em 0 0 1.8em;
     }
     .title {
         margin-bottom: -4em;
@@ -20,6 +21,7 @@
     }
     .heroImg {
         max-width: 90%;
+        margin: 0 0 0 1.2rem;
     }
     .weatherSummary {
         top: 30em;
