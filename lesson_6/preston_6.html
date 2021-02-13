@@ -82,7 +82,12 @@
             </table>
         </div>
         <article class="hikingInfo">
-            <img class="hikingIMG" src="images/hikingFlowers.png" alt="Hiking in flowers">
+            <picture class="hiking">
+                <source media="(max-width: 200px)" class="hikingIMG" srcset="images/hikingFlowers200.jpg">
+                <source media="(max-width: 500px)" class="hikingIMG" srcset="images/hikingFlowers500.jpg">
+                <source media="(max-width: 800px)" class="hikingIMG" srcset="images/hikingFlowers800.jpg">
+                <img class="hikingIMG" src="images/hikingFlowers1100.jpg" alt="Hiking in flowers">
+            </picture>
             <h3>How to prepare for a full day of hiking</h3>
             <h4>By Trent Jonas</h4>
             <p>A day hike doesn't sound like it would require much preparation, but there are a few important things to take note of, plan for, and pack with you before you head out to the trails. If you plan to spend more than just a couple of hours out

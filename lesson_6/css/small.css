@@ -174,8 +174,8 @@ main article {
 .hikingIMG {
     float: right;
     width: 100%;
-    margin: 1em;
-    box-shadow: 0 0 10px #111;
+    margin: 0 .5em 1em .5em;
+    box-shadow: 0 0 10px 0 #111;
 }
 
 .social {
