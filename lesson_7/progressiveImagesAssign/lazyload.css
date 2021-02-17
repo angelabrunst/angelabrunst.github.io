@@ -1,0 +1,19 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6fr;
+}
+
+img {
+    border: 0.3em groove grey;
+    filter: blur(0em);
+    transition: filter 0.5s;
+}
+
+img[data-src] {
+    filter: blur(0.2em);
+}
+
+.center {
+    text-align: center;
+}
