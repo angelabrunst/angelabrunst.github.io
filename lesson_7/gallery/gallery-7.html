@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lesson 6 for Angela Brunst in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>The Weather Rock - Gallery | Angela Brunst</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/small.css" type="text/css">
+    <link rel="stylesheet" href="css/medium.css" type="text/css">
+    <link rel="stylesheet" href="css/large.css" type="text/css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body onload="currentDate();">
+    <header>
+        <picture class="logo">
+            <source media="(max-width: 200px)" class="logo_img" srcset="images/logo200.png">
+            <source media="(max-width: 500px)" class="logo_img" srcset="images/logo500.png">
+            <source media="(max-width: 800px)" class="logo_img" srcset="images/logo800.png">
+            <img class="logo_img" src="images/logo800.png" alt="The Weather Rock logo">
+        </picture>
+        <h1 class="title">The Weather Rock</h1>
+        <p class="motto">Adventure in all weather</p>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="/angelabrunst.github.io/lesson_6/preston_6.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="gallery-7.html" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h1 class="center galleryTitle">Weather Gallery</h1>
+        </div>
+        <picture class="center one">
+            <img src="images/placeholder.jpg" data-src="images/img1.jpg" alt="image one">
+        </picture>
+        <picture class="center two">
+            <img src="images/placeholder.jpg" data-src="images/img2.jpg" alt="image two">
+        </picture>
+        <picture class="center three">
+            <img src="images/placeholder.jpg" data-src="images/img3.jpg" alt="image three">
+        </picture>
+        <picture class="center four">
+            <img src="images/placeholder.jpg" data-src="images/img4.jpg" alt="image four">
+        </picture>
+        <picture class="center five">
+            <img src="images/placeholder.jpg" data-src="images/img5.jpg" alt="image five">
+        </picture>
+        <picture class="center six">
+            <img src="images/placeholder.jpg" data-src="images/img6.jpg" alt="image six">
+        </picture>
+    </main>
+    <footer>
+        <div class="contactInfo">
+            <h3>Contact Information</h3>
+            <p>&#9993; theweatherrock@weather.org</p>
+            <p>&#9742; 1-800-888-9000</p>
+            <a href="https://www.facebook.com" target="_blank"><img class="social" src="images/facebook.jpg" alt="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank"><img class="social" src="images/twitter.jpg" alt="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="social" src="images/instagram.jpg" alt="Instagram"></a>
+        </div>
+        <picture class="map">
+            <img src="images/prestonMap.jpg" alt="GoogleMaps of Preston, ID">
+        </picture>
+        <p>&copy; 2021 | Angela Brunst | Arizona | <a href="https://www.byui.edu/online" target="_blank">BYU-I Online Learning</a></p>
+        <p class="date">
+            Current Date: <span id="currentDate"></span>
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Scope One', 'Trocchi'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
