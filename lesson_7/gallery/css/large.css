@@ -21,7 +21,7 @@
     }
     .grid {
         grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 3fr;
+        grid-template-rows: 4fr;
     }
     .combo:hover {
         box-shadow: 0 0 50px #333;
