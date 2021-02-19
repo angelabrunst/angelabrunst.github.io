@@ -14,18 +14,53 @@
         margin: 1em 0 0 1.8em;
     }
     .title {
-        margin-bottom: -4em;
+        margin-left: -11em;
     }
     .motto {
         margin-top: -1em;
     }
-    .heroImg {
-        max-width: 90%;
-        margin: 0 0 0 1.2rem;
+    .grid {
+        grid-template-columns: 30% 30% 30%;
+        grid-template-rows: 3fr;
     }
-    .weatherSummary {
-        top: 30em;
-        left: 15em;
+    .combo:hover {
+        box-shadow: 0 0 50px #333;
+    }
+    .one {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .two {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .three {
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .four {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .five {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .six {
+        grid-column: 3;
+        grid-row: 2;
+    }
+    .seven {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .eight {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .nine {
+        grid-column: 3;
+        grid-row: 3;
     }
     .map {
         margin: 0 5em 0 5em;

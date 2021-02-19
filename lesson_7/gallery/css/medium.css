@@ -31,31 +31,50 @@
     }
     .title {
         margin-bottom: -4em;
+        margin-left: -9em;
     }
-    .heroImg {
-        max-width: 90%;
-        margin: 0 0 0 .6rem;
-        position: relative;
+    .grid {
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 5fr;
     }
-    .weatherSummary {
-        position: absolute;
-        top: 25em;
-        left: 8em;
-        box-shadow: 0 0 30px #1F7A8C;
+    .combo img {
+        max-width: 100%;
     }
-    .fiveDayForcast {
-        display: block;
-        margin: 0 auto;
+    .one {
+        grid-column: 1;
+        grid-row: 1;
     }
-    .center {
-        text-align: center;
+    .two {
+        grid-column: 2;
+        grid-row: 1;
     }
-    .temp {
-        text-align: center;
+    .three {
+        grid-column: 1;
+        grid-row: 2;
     }
-    .hikingIMG {
-        float: right;
-        max-width: 30%;
+    .four {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .five {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .six {
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .seven {
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .eight {
+        grid-column: 2;
+        grid-row: 4;
+    }
+    .nine {
+        grid-column: 1;
+        grid-row: 5;
     }
     footer {
         display: grid;
