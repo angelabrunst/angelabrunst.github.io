@@ -41,11 +41,11 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Your Information</legend>
-                <label class="top">First Name* <input type="text" name="fname" required></label>
+                <label class="top">First Name* <input type="text" name="fname" required pattern="[a-zA-Z\s]{5,}"></label>
                 <label class="top">Last Name* <input type="text" name="lname" required></label>
                 <label class="top">Phone* <input type="tel" name="phone" placeholder="1235551234" required></label>
                 <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
-                <label class="top">Zip Code*<input type="text" name="zip" required></label>
+                <label class="top">Zip Code*<input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)" autocomplete="shipping postal-codep" required></label>
             </fieldset>
             <fieldset>
                 <legend>Storm Sighting</legend>
