@@ -34,7 +34,8 @@
         margin-left: -9em;
     }
     main {
-        padding: 2em;
+        padding: 0.5em 2em;
+        margin: 3em;
     }
     footer {
         display: grid;
