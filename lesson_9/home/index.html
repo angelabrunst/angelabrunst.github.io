@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lesson 7 for Angela Brunst in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>The Weather Rock - Gallery | Angela Brunst</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="/angelabrunst.github.io/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/small.css" type="text/css">
+    <link rel="stylesheet" href="css/medium.css" type="text/css">
+    <link rel="stylesheet" href="css/large.css" type="text/css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body onload="currentDate();">
+    <header>
+        <picture class="logo">
+            <source media="(max-width: 200px)" class="logo_img" srcset="images/logo200.png">
+            <source media="(max-width: 500px)" class="logo_img" srcset="images/logo500.png">
+            <source media="(max-width: 800px)" class="logo_img" srcset="images/logo800.png">
+            <img class="logo_img" src="images/logo800.png" alt="The Weather Rock logo">
+        </picture>
+        <h1 class="title">The Weather Rock</h1>
+        <p class="motto">Adventure in all weather</p>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="/angelabrunst.github.io/lesson_9/home/index.html" class="active">Home</a></li>
+            <li><a href="/angelabrunst.github.io/lesson_5/preston-5.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="/angelabrunst.github.io/lesson_8/stormCenter/stormcenter.html">Storm Center</a></li>
+            <li><a href="/angelabrunst.github.io/lesson_7/gallery/gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="center">Home Wireframes</h1>
+        <a class="center" href="https://wireframe.cc/p7DMOV" target="_blank">
+            <h2>Small Wireframe</h2>
+        </a>
+        <a class="center" href="https://wireframe.cc/fQjSkn" target="_blank">
+            <h2>Medium Wireframe</h2>
+        </a>
+        <a class="center" href="https://wireframe.cc/rpbdqR" target="_blank">
+            <h2>Large Wireframe</h2>
+        </a>
+    </main>
+    <footer>
+        <div class="contactInfo">
+            <h3>Contact Information</h3>
+            <p>&#9993; theweatherrock@weather.org</p>
+            <p>&#9742; 1-800-888-9000</p>
+            <a href="https://www.facebook.com" target="_blank"><img class="social" src="images/facebook.jpg" alt="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank"><img class="social" src="images/twitter.jpg" alt="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="social" src="images/instagram.jpg" alt="Instagram"></a>
+        </div>
+        <picture class="map">
+            <img src="images/prestonMap.jpg" alt="GoogleMaps of Preston, ID">
+        </picture>
+        <p>&copy; 2021 | Angela Brunst | Arizona | <a href="https://www.byui.edu/online" target="_blank">BYU-I Online Learning</a></p>
+        <p class="date">
+            Current Date: <span id="currentDate"></span>
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Scope One', 'Trocchi'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
