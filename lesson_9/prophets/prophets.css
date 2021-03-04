@@ -1,0 +1,82 @@
+header,
+footer {
+    background-image: linear-gradient(180deg, rgb(253, 250, 250) 60%, rgb(197, 197, 197));
+    text-align: center;
+    margin: 2em auto;
+}
+
+img {
+    box-shadow: 8px 8px 8px 2px rgba(0, 0, 0, 0.19);
+    max-width: 10em;
+    margin: .5em;
+}
+
+h1 {
+    color: rgb(78, 57, 153);
+    padding: .5em;
+}
+
+h2 {
+    color: rgb(78, 57, 153);
+    font-weight: boldest;
+    padding: 0;
+    margin: .5em auto;
+}
+
+p {
+    font-size: .5em;
+    padding: 0;
+    margin: .5em auto;
+}
+
+body section {
+    width: 21em;
+    max-width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    background-color: rgba(129, 135, 189, 0.658);
+    ;
+    padding: 1em 0 0 .5em;
+    margin: 1em 1em 1em 2em;
+    border: 1px solid rgb(100, 100, 209);
+    justify-content: center;
+}
+
+@media screen and (min-width: 32.5em) {
+    h1 {
+        font-size: 3em;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    body section {
+        margin: 1em;
+    }
+    body section:first-child,
+    section:last-child {
+        margin: 1em;
+    }
+    body section:last-child {
+        grid-column: 1/3;
+    }
+    img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:60em) {
+    body section {
+        width: 15.5em;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    body section:last-child {
+        grid-column: auto;
+    }
+}
