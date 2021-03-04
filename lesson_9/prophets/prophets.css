@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 header,
 footer {
     background-image: linear-gradient(180deg, rgb(253, 250, 250) 60%, rgb(197, 197, 197));
@@ -12,11 +13,13 @@ img {
 }
 
 h1 {
+    font-family: 'Bree Serif', serif;
     color: rgb(78, 57, 153);
     padding: .5em;
 }
 
 h2 {
+    font-family: 'Bree Serif', serif;
     color: rgb(78, 57, 153);
     font-weight: boldest;
     padding: 0;
@@ -30,6 +33,7 @@ p {
 }
 
 body section {
+    font-family: 'Bree Serif', serif;
     width: 21em;
     max-width: 100%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -37,7 +41,7 @@ body section {
     background-color: rgba(129, 135, 189, 0.658);
     ;
     padding: 1em 0 0 .5em;
-    margin: 1em 1em 1em 2em;
+    margin: 1em;
     border: 1px solid rgb(100, 100, 209);
     justify-content: center;
 }
