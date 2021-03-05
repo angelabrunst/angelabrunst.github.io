@@ -14,7 +14,7 @@
 
 </head>
 
-<body onload="currentDate(); windChill();">
+<body onload="currentDate();">
     <div id="eventBanner">
         <script src="js/script.js"></script>
     </div>
@@ -22,8 +22,7 @@
         <picture class="logo">
             <source media="(max-width: 200px)" class="logo_img" srcset="images/logo200.png">
             <source media="(max-width: 500px)" class="logo_img" srcset="images/logo500.png">
-            <source media="(max-width: 800px)" class="logo_img" srcset="images/logo800.png">
-            <img class="logo_img" src="images/logo800.png" alt="The Weather Rock logo">
+            <img class="logo_img" src="images/logo200.png" alt="The Weather Rock logo">
         </picture>
         <h1 class="title">The Weather Rock</h1>
         <p class="motto">Adventure in all weather</p>
@@ -31,8 +30,8 @@
     <nav>
         <ul class="navigation">
             <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
-            <li><a href="/angelabrunst.github.io/lesson_9/homeDraft/index.html">Home</a></li>
-            <li><a href="preston_6.html" class="active">Preston</a></li>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="/angelabrunst.github.io/lesson_6/preston_6.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="/angelabrunst.github.io/lesson_8/stormCenter/stormcenter.html">Storm Center</a></li>
@@ -40,54 +39,21 @@
         </ul>
     </nav>
     <main>
-        <div class="locationTitle">
-            <h2>Preston Idaho</h2>
-        </div>
         <picture class="hero">
-            <source media="(max-width: 200px)" class="heroImg" srcset="images/heroImg200.jpg">
-            <source media="(max-width: 500px)" class="heroImg" srcset="images/heroImg500.jpg">
-            <source media="(max-width: 800px)" class="heroImg" srcset="images/heroImg800.jpg">
-            <img class="heroImg" src="images/heroImg1100.jpg" alt="test hero image">
+            <source media="(max-width: 500px)" class="heroImg" srcset="images/hero500.jpg">
+            <source media="(max-width: 800px)" class="heroImg" srcset="images/hero800.jpg">
+            <img class="heroImg" src="images/hero1200.jpg" alt="test hero image">
         </picture>
-        <div class="weatherSummary">
-            <h3>Weather Summary</h3>
-            <p>Precipitation: 0%</p>
-            <p>Humidity: 72%</p>
-            <p>Wind: 5mph</p>
-            <p>Wind Chill: <span id="windChill"></span>&#176; F</p>
-        </div>
-        <div class="fiveDayForcast">
-            <h3 class="center">Five Day Forecast</h3>
-            <table class="forecastTable">
-                <tr>
-                    <th>Mon</th>
-                    <th>Tue</th>
-                    <th>Wed</th>
-                    <th>Thu</th>
-                    <th>Fri</th>
-                </tr>
-                <tr>
-                    <td><img class="forecastImg" src="images/sunny.jpg" alt="sunny"></td>
-                    <td><img class="forecastImg" src="images/partly_cloudy.jpg" alt="partly cloudy"></td>
-                    <td><img class="forecastImg" src="images/partly_cloudy.jpg" alt="partly cloudy"></td>
-                    <td><img class="forecastImg" src="images/cloudy.jpg" alt="cloudy"></td>
-                    <td><img class="forecastImg" src="images/snow.jpg" alt="snow"></td>
-                </tr>
-                <tr>
-                    <td class="temp"><br>25&#176; F</td>
-                    <td class="temp"><br>26&#176; F</td>
-                    <td class="temp"><br>24&#176; F</td>
-                    <td class="temp"><br>12&#176; F</td>
-                    <td class="temp"><br>22&#176; F</td>
-                </tr>
-            </table>
-        </div>
+        </section>
+
+        <section class="town-data">
+            <div class="towns"></div>
+        </section>
         <article class="hikingInfo">
             <picture class="hiking">
                 <source media="(max-width: 200px)" class="hikingIMG" srcset="images/hikingFlowers200.jpg">
                 <source media="(max-width: 500px)" class="hikingIMG" srcset="images/hikingFlowers500.jpg">
-                <source media="(max-width: 800px)" class="hikingIMG" srcset="images/hikingFlowers800.jpg">
-                <img class="hikingIMG" src="images/hikingFlowers1100.jpg" alt="Hiking in flowers">
+                <img class="hikingIMG" src="images/hikingFlowers800.jpg" alt="Hiking in flowers">
             </picture>
             <h3>How to prepare for a full day of hiking</h3>
             <h4>By Trent Jonas</h4>
@@ -115,7 +81,7 @@
         <picture class="map">
             <img src="images/prestonMap.jpg" alt="GoogleMaps of Preston, ID">
         </picture>
-        <p>&copy; 2021 | Angela Brunst | Arizona | <a href="https://www.byui.edu/online" target="_blank">BYU-I Online Learning</a></p>
+        <p>&copy; 2021 | Angela Brunst | Arizona | <a href="/angelabrunst.github.io/lesson_9/home/index.html" target="_blank">Wireframes</a> | <a href="https://www.byui.edu/online" target="_blank">BYU-I Online Learning</a></p>
         <p class="date">
             Current Date: <span id="currentDate"></span>
         </p>
