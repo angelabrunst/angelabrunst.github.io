@@ -58,10 +58,6 @@
     .towns section:nth-child(2n) h2 .towns section:nth-child(2n) h3 .towns section:nth-child(2n) h4 {
         grid-column: 2/3;
     }
-    .hikingIMG {
-        float: right;
-        max-width: 30%;
-    }
     footer {
         display: grid;
         grid-template-columns: 1fr 1fr;

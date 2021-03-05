@@ -169,13 +169,6 @@ main article {
     margin: 1em;
 }
 
-.hikingIMG {
-    float: right;
-    width: 100%;
-    margin: 0 .5em 1em .5em;
-    box-shadow: 0 2px 15px gray;
-}
-
 .social {
     border-radius: 10%;
     max-width: 30px;
