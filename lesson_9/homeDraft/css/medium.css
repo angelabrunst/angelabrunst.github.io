@@ -55,10 +55,7 @@
     .towns section:nth-child(2n) img {
         grid-column: 1/2;
     }
-    .towns section:nth-child(2n) h2,
-    .towns section:nth-child(2n) h3,
-    .towns section:nth-child(2n) h4,
-    {
+    .towns section:nth-child(2n) h2 .towns section:nth-child(2n) h3 .towns section:nth-child(2n) h4 {
         grid-column: 2/3;
     }
     .hikingIMG {
