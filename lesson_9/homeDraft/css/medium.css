@@ -50,7 +50,7 @@
     .towns section img {
         grid-column: 2/3;
         grid-row: 1/6;
-        margin: 30px -30px 0 0;
+        margin: 20px 0 0 0;
     }
     .towns section:nth-child(2n) img {
         grid-column: 1/2;
