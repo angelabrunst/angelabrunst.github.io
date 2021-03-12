@@ -15,7 +15,7 @@
 
 </head>
 
-<body onload="currentDate(); windChill();">
+<body onload="currentDate(); windChill(); fiveDayForecast()">
     <div id="eventBanner">
         <script src="js/script.js"></script>
     </div>
@@ -50,35 +50,36 @@
         <div class="weatherSummary">
             <h3>Weather Summary</h3>
             <p>Current Temperature: <span id="current-temp"></span>&deg; F</p>
-            </p>
-            <p>Precipitation: 0%</p>
-            <p>Humidity: 72%</p>
-            <p>Wind: 5mph</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="wind-speed"></span>mph</p>
             <p>Wind Chill: <span id="windChill"></span>&#176; F</p>
         </div>
         <div class="fiveDayForcast">
             <h3 class="center">Five Day Forecast</h3>
             <table class="forecastTable">
                 <tr>
-                    <th>Mon</th>
-                    <th>Tue</th>
-                    <th>Wed</th>
-                    <th>Thu</th>
-                    <th>Fri</th>
+                    <th>
+                        <div id="fiveDay1"></div>
+                    </th>
+                    <th>
+                        <div id="fiveDay2"></div>
+                    </th>
+                    <th>
+                        <div id="fiveDay3"></div>
+                    </th>
+                    <th>
+                        <div id="fiveDay4"></div>
+                    </th>
+                    <th>
+                        <div id="fiveDay5"></div>
+                    </th>
                 </tr>
                 <tr>
-                    <td><span class="forecastImg" id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></td>
-                    <td><span class="forecastImg" id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></td>
-                    <td><span class="forecastImg" id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></td>
-                    <td><span class="forecastImg" id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></td>
-                    <td><span class="forecastImg" id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></td>
-                </tr>
-                <tr>
-                    <td class="temp"><br><span class="current-temp"></span>&deg; F</td>
-                    <td class="temp"><br>26&#176; F</td>
-                    <td class="temp"><br>24&#176; F</td>
-                    <td class="temp"><br>12&#176; F</td>
-                    <td class="temp"><br>22&#176; F</td>
+                    <td><img src="" alt="" id="forecastIcon1"><br><span id="forecastTemp1" class="center"></span>&#176; F</td>
+                    <td><img src="" alt="" id="forecastIcon2"><br><span id="forecastTemp2" class="center"></span>&#176; F</td>
+                    <td><img src="" alt="" id="forecastIcon3"><br><span id="forecastTemp3" class="center"></span>&#176; F</td>
+                    <td><img src="" alt="" id="forecastIcon4"><br><span id="forecastTemp4" class="center"></span>&#176; F</td>
+                    <td><img src="" alt="" id="forecastIcon5"><br><span id="forecastTemp5" class="center"></span>&#176; F</td>
                 </tr>
             </table>
         </div>

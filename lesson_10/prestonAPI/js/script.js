@@ -25,8 +25,8 @@ function currentDate() {
 
 //windchill calculator
 function windChill() {
-    var temp = 25
-    var windSpeed = 5
+    var temp = document.getElementById('current-temp').innerHTML
+    var windSpeed = document.getElementById('wind-speed').innerHTML
 
     if (temp > 50 && windSpeed < 3) {
         windChill = "N/A";
@@ -63,17 +63,58 @@ if ('IntersectionObserver' in window) {
     });
 }
 
-//weather API
-const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=242f1fb78f229667592c2503b963e887";
-fetch(apiURL)
+//weather summary API
+const apiCurrentURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=242f1fb78f229667592c2503b963e887";
+fetch(apiCurrentURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        let ptemp = Math.round((jsObject.main.temp - 273.15) * (9 / 5) + 32)
-        document.getElementById('current-temp').textContent = ptemp;
+        document.getElementById('current-temp').textContent = jsObject.main.temp;
+        document.getElementById('humidity').textContent = jsObject.main.humidity;
+        document.getElementById('wind-speed').textContent = jsObject.wind.speed;
+    });
 
-        const imagesrc = 'https://openweathermap.org/img/w/' + jsObject.weather[0].icon + '.png'; // note the concatenation
-        const desc = jsObject.weather[0].description; // note how we reference the weather array
-        document.getElementById('imagesrc').textContent = imagesrc; // informational specification only
-        document.getElementById('icon').setAttribute('src', imagesrc); // focus on the setAttribute() method
-        document.getElementById('icon').setAttribute('alt', desc);
+//five day forecast API
+function fiveDayForecast() {
+    var d = new Date();
+    var dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+
+    for (let i = 1; i < 6; i++) {
+        let day = "fiveDay" + i;
+        let weekday = d.getDay() + i;
+
+        if (weekday > 6) {
+            weekday = weekday - 7;
+            document.getElementById(day).innerHTML = dayOfWeek[weekday];
+        } else {
+            document.getElementById(day).innerHTML = dayOfWeek[weekday];
+        }
+    }
+}
+const apiForecastURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&units=imperial&appid=242f1fb78f229667592c2503b963e887";
+fetch(apiForecastURL)
+    .then((response) => response.json())
+    .then((jsForecast) => {
+        console.log(jsForecast);
+
+        var i = 1;
+        for (var x = 0; x < jsForecast.list.length; x++) {
+            var temp = "forecastTemp" + i;
+            var icon = "forecastIcon" + i;
+            if (jsForecast.list[x].dt_txt.includes("18:00:00")) {
+                document.getElementById(temp).textContent = jsForecast.list[x].main.temp;
+
+                const imagesrc = 'https://openweathermap.org/img/w/' + jsForecast.list[x].weather[0].icon + '.png'; // note the concatenation
+                const desc = jsForecast.list[x].weather[0].description; // note how we reference the weather array
+                document.getElementById(icon).setAttribute('src', imagesrc); // focus on the setAttribute() method
+                document.getElementById(icon).setAttribute('alt', desc);
+
+                i++;
+            }
+
+        }
+        const imagesrc = 'https://openweathermap.org/img/w/' + jsForecast.list[6].weather[0].icon + '.png'; // note the concatenation
+        const desc = jsForecast.list[6].weather.description; // note how we reference the weather array
+        document.getElementById('forecast-icon1').setAttribute('src', imagesrc); // focus on the setAttribute() method
+        document.getElementById('forecast-icon1').setAttribute('alt', desc);
+
     });

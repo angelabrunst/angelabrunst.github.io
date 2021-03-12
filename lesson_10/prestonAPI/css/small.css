@@ -155,8 +155,29 @@ main {
     justify-content: center;
 }
 
-.forecast img {
-    max-width: 14%;
+table {
+    border-collapse: collapse;
+    margin: 2em auto;
+    min-width: 400px;
+    box-shadow: 0 0 10px 0 #111;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: #1F7A8C;
+    color: white;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border: 1.5px solid #E1E5F2;
+}
+
+tr img {
+    width: 5rem;
 }
 
 main article {
@@ -174,7 +195,7 @@ main article {
 .hikingIMG {
     float: right;
     width: 100%;
-    margin: 0 .5em 1em .5em;
+    margin: 0 0 1em 1.5em;
     box-shadow: 0 0 10px 0 #111;
 }
 
