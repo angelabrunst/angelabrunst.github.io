@@ -1,0 +1,81 @@
+@media only screen and (min-width: 37.5em) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        margin-left: 20px;
+    }
+    nav ul {
+        display: flex;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    nav a {
+        font-size: 1rem;
+    }
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .logo_img {
+        max-width: 50%;
+        margin: 1em 0 0 .7em;
+    }
+    .title {
+        margin-bottom: -4em;
+    }
+    .heroImg {
+        max-width: 90%;
+        margin: 0 0 0 .6rem;
+        position: relative;
+    }
+    .center {
+        text-align: center;
+    }
+    .temp {
+        text-align: center;
+    }
+    .towns section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .towns section img {
+        grid-column: 2/3;
+        grid-row: 1/6;
+        margin: 20px 0 0 0;
+    }
+    .towns section:nth-child(2n) img {
+        grid-column: 1/2;
+    }
+    .towns section:nth-child(2n) h2 .towns section:nth-child(2n) h3 .towns section:nth-child(2n) h4 {
+        grid-column: 2/3;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 4fr 1fr;
+    }
+    .map {
+        grid-column: 1;
+        grid-row: 1;
+        margin: 0 3em 0 3em;
+    }
+    .contactInfo {
+        grid-column: 2;
+        grid-row: 1;
+        margin: 0 3em 0 3em;
+    }
+    .date {
+        grid-column: 1;
+        grid-row: 2;
+        text-align: center;
+    }
+}

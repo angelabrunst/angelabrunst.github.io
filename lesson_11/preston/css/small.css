@@ -1,0 +1,211 @@
+body {
+    font-size: 16px;
+    font-family: 'Scope One', serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-color: #E1E5F2;
+    padding: 10px;
+}
+
+footer {
+    background-color: #E1E5F2;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-bottom: 1em solid #022B3A;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    background-color: #022B3A;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 0 2px 15px gray;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: center;
+}
+
+nav ul li a {
+    display: block;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+nav a:hover {
+    background-color: #1F7A8C;
+    color: #fff;
+}
+
+.active {
+    background-color: #1F7A8C;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.navigation a:hover {
+    color: #1F7A8C;
+    background-color: #022B3A;
+}
+
+.responsive li {
+    display: block;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-family: 'Trocchi', serif;
+}
+
+h2 {
+    color: #1F7A8C;
+    margin-left: 10px;
+}
+
+.logo_img {
+    max-width: 60%;
+    grid-column: 1;
+    margin: 1em 0 0 .3em;
+}
+
+.title {
+    grid-column: 2;
+}
+
+.motto {
+    grid-column: 2;
+    margin-top: -.5em;
+}
+
+#eventBanner {
+    margin: 0 auto;
+    padding: 1em;
+    background-color: #E1E5F2;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: 0.8rem;
+}
+
+.heroImg {
+    max-width: 100%;
+    box-shadow: 0 0 10px #111;
+}
+
+.weatherSummary {
+    border: .1em solid #022B3A;
+    margin: .7rem;
+    padding: 1.5em;
+    background: radial-gradient(#FFFFFF, #BFDBF7);
+    opacity: .8;
+    box-shadow: 0 0 10px #111;
+}
+
+.fiveDayForcast {
+    display: none;
+}
+
+.forecast {
+    float: left;
+    margin: 1.5rem;
+    border: 0.3rem solid #1F7A8C;
+    border-radius: 00.7rem;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 2em auto;
+    min-width: 400px;
+    box-shadow: 0 0 10px 0 #111;
+    text-align: center;
+}
+
+th {
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: #1F7A8C;
+    color: white;
+}
+
+th,
+td {
+    padding: 12px 15px;
+    border: 1.5px solid #E1E5F2;
+}
+
+tr img {
+    width: 5rem;
+}
+
+main article {
+    margin: 2rem;
+    padding: 2rem;
+    border: 1px solid #1F7A8C;
+    background-color: #E1E5F2;
+    box-shadow: 0 0 10px #111;
+}
+
+.hikingInfo {
+    margin: 1em;
+}
+
+.hikingIMG {
+    float: right;
+    width: 100%;
+    margin: 0 0 1em 1.5em;
+    box-shadow: 0 0 10px 0 #111;
+}
+
+.social {
+    border-radius: 10%;
+    max-width: 30px;
+    margin: 0 5px 0 5px;
+}
+
+.map img {
+    margin: .5em auto;
+    max-width: 100%;
+}

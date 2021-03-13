@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lesson 7 for Angela Brunst in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>The Weather Rock - Gallery | Angela Brunst</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="/angelabrunst.github.io/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/small.css" type="text/css">
+    <link rel="stylesheet" href="css/medium.css" type="text/css">
+    <link rel="stylesheet" href="css/large.css" type="text/css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body onload="currentDate();">
+    <header>
+        <picture class="logo">
+            <source media="(max-width: 200px)" class="logo_img" srcset="images/logo200.png">
+            <source media="(max-width: 500px)" class="logo_img" srcset="images/logo500.png">
+            <source media="(max-width: 800px)" class="logo_img" srcset="images/logo800.png">
+            <img class="logo_img" src="images/logo800.png" alt="The Weather Rock logo">
+        </picture>
+        <h1 class="title">The Weather Rock</h1>
+        <p class="motto">Adventure in all weather</p>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href="../preston/preston.html">Preston</a></li>
+            <li><a href="../sodaSprings/sodaSprings.html">Soda Springs</a></li>
+            <li><a href="../fishHaven/fishHaven.html">Fish Haven</a></li>
+            <li><a href="../stormCenter/stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html" class="active">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div>
+            <h2 class="center galleryTitle">Weather Gallery</h2>
+        </div>
+        <div class="grid">
+            <div class="combo one">
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/one.jpg" alt="image one">
+                </picture>
+                <p>Snow near Bear Lake</p>
+            </div>
+            <div class="combo two">
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/two.jpg" alt="image two">
+                </picture>
+                <p>Snow in Soda Springs</p>
+            </div>
+            <div class="combo three">
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/three.jpg" alt="image three">
+                </picture>
+                <p>After the storm, near Preston</p>
+            </div>
+            <div class="combo four">
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/four.jpg" alt="image four">
+                </picture>
+                <p>Snow near Pocatello</p>
+            </div>
+            <div class="combo five">
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/five.jpg" alt="image five">
+                </picture>
+                <p>Possible rainstorm near Rigby</p>
+            </div>
+            <div class="combo six">
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/six.jpg" alt="image six">
+                </picture>
+                <p>Coldfront blowing into Preston</p>
+            </div>
+            <div class="combo seven">
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/seven.jpg" alt="image six">
+                </picture>
+                <p>Lightening outside of Soda Springs</p>
+            </div>
+            <div class="combo eight">
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/eight.jpg" alt="image six">
+                </picture>
+                <p>Lightening near Boise</p>
+            </div>
+            <div class="combo nine">
+                <picture>
+                    <img src="images/placeholder.jpg" data-src="images/nine.jpg" alt="image six">
+                </picture>
+                <p>Snow near Preston</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contactInfo">
+            <h3>Contact Information</h3>
+            <p>&#9993; theweatherrock@weather.org</p>
+            <p>&#9742; 1-800-888-9000</p>
+            <a href="https://www.facebook.com" target="_blank"><img class="social" src="images/facebook.jpg" alt="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank"><img class="social" src="images/twitter.jpg" alt="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="social" src="images/instagram.jpg" alt="Instagram"></a>
+        </div>
+        <picture class="map">
+            <img src="images/prestonMap.jpg" alt="GoogleMaps of Preston, ID">
+        </picture>
+        <p>&copy; 2021 | Angela Brunst | Arizona | <a href="https://www.byui.edu/online" target="_blank">BYU-I Online Learning</a></p>
+        <p class="date">
+            Current Date: <span id="currentDate"></span>
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Scope One', 'Trocchi'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>

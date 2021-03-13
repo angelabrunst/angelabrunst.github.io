@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Lesson 6 for Angela Brunst in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
+    <title>The Weather Rock - Preston | Angela Brunst</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/small.css" type="text/css">
+    <link rel="stylesheet" href="css/medium.css" type="text/css">
+    <link rel="stylesheet" href="css/large.css" type="text/css">
+    <script src="js/script.js" defer></script>
+
+</head>
+
+<body onload="currentDate(); windChill(); fiveDayForecast()">
+    <div id="eventBanner">
+        <script src="js/script.js"></script>
+    </div>
+    <header>
+        <picture class="logo">
+            <source media="(max-width: 200px)" class="logo_img" srcset="images/logo200.png">
+            <img class="logo_img" src="images/logo500.png" alt="The Weather Rock logo">
+        </picture>
+        <h1 class="title">The Weather Rock</h1>
+        <p class="motto">Adventure in all weather</p>
+    </header>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="../home/index.html">Home</a></li>
+            <li><a href="../preston/preston.html">Preston</a></li>
+            <li><a href="../sodaSprings/sodaSprings.html" class="active">Soda Springs</a></li>
+            <li><a href="../fishHaven/fishHaven.html">Fish Haven</a></li>
+            <li><a href="../stormCenter/stormcenter.html">Storm Center</a></li>
+            <li><a href="../gallery/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="locationTitle">
+            <h2>Soda Springs</h2>
+        </div>
+        <picture class="hero">
+            <source media="(max-width: 500px)" class="heroImg" srcset="images/sodaSpringsHero500.jpg">
+            <source media="(max-width: 800px)" class="heroImg" srcset="images/sodaSpringsHero800.jpg">
+            <img class="heroImg" src="images/sodaSpringsHero1100.jpg" alt="test hero image">
+        </picture>
+        <div class="weatherSummary">
+            <h3>Weather Summary</h3>
+            <p>Current Temperature: <span id="current-temp"></span>&deg; F</p>
+            <p>Humidity: <span id="humidity"></span>%</p>
+            <p>Wind Speed: <span id="wind-speed"></span>mph</p>
+            <p>Wind Chill: <span id="windChill"></span>&#176; F</p>
+        </div>
+        <div class="fiveDayForcast">
+            <h3 class="center">Five Day Forecast</h3>
+            <table class="forecastTable">
+                <tr>
+                    <th>
+                        <div id="fiveDay1"></div>
+                    </th>
+                    <th>
+                        <div id="fiveDay2"></div>
+                    </th>
+                    <th>
+                        <div id="fiveDay3"></div>
+                    </th>
+                    <th>
+                        <div id="fiveDay4"></div>
+                    </th>
+                    <th>
+                        <div id="fiveDay5"></div>
+                    </th>
+                </tr>
+                <tr>
+                    <td><img alt="icon" id="forecastIcon1"><br><span id="forecastTemp1"></span>&#176; F</td>
+                    <td><img alt="icon" id="forecastIcon2"><br><span id="forecastTemp2"></span>&#176; F</td>
+                    <td><img alt="icon" id="forecastIcon3"><br><span id="forecastTemp3"></span>&#176; F</td>
+                    <td><img alt="icon" id="forecastIcon4"><br><span id="forecastTemp4"></span>&#176; F</td>
+                    <td><img alt="icon" id="forecastIcon5"><br><span id="forecastTemp5"></span>&#176; F</td>
+                </tr>
+            </table>
+        </div>
+        <article class="hikingInfo">
+            <picture class="hiking">
+                <source media="(max-width: 500px)" class="hikingIMG" srcset="images/hikingFlowers500.jpg">
+                <img class="hikingIMG" src="images/hikingFlowers800.jpg" alt="Hiking in flowers">
+            </picture>
+            <h3>How to prepare for a full day of hiking</h3>
+            <h4>By Trent Jonas</h4>
+            <p>A day hike doesn't sound like it would require much preparation, but there are a few important things to take note of, plan for, and pack with you before you head out to the trails. If you plan to spend more than just a couple of hours out
+                hiking, especially if you are unfamiliar with the trail, make sure you've checked everything off your checklist. From taking a peek at the weather to properly packing your backpack, here are a few tips to get you ready for your trek.</p>
+            <h5>Check the weather</h5>
+            <p>Before you hit the trail for the day, you’ll need to know what kinds of conditions you’ll be dealing with. Take note of the forecast, and dress and pack accordingly. Prepare for unexpected changes: Bring a light, waterproof jacket in case
+                of unexpected rain or cool weather.</p>
+            <h5>Know where you're going</h5>
+            <p>Heading out for an all-day hike usually means you’re going to go some distance, and if you’re leaving a familiar environment or heading into the wilderness, it’s best to have a good idea of where you’re going and what kind of terrain you’ll
+                be hiking before you go. Bring along a GPS unit or a smartphone with an app like Gaia GPS to help you keep track of where you are on the trail. But never rely solely on electronics to get you by, always bring along a map (ideally a topo
+                map) and a compass in case your electronics run out of charge or fail in some way.</p>
+            <a href="https://stepoutside.org/article/how-to-prepare-for-a-full-day-of-hiking/">Full article here</a>
+        </article>
+    </main>
+    <footer>
+        <div class="contactInfo">
+            <h3>Contact Information</h3>
+            <p>&#9993; theweatherrock@weather.org</p>
+            <p>&#9742; 1-800-888-9000</p>
+            <a href="https://www.facebook.com" target="_blank"><img class="social" src="images/facebook.jpg" alt="Facebook"></a>
+            <a href="https://www.twitter.com" target="_blank"><img class="social" src="images/twitter.jpg" alt="Twitter"></a>
+            <a href="https://www.instagram.com" target="_blank"><img class="social" src="images/instagram.jpg" alt="Instagram"></a>
+        </div>
+        <picture class="map">
+            <img src="images/sodaSpringsMap.jpg" alt="GoogleMaps of Soda Springs, ID">
+        </picture>
+        <p>&copy; 2021 | Angela Brunst | Arizona | <a href="https://www.byui.edu/online" target="_blank">BYU-I Online Learning</a></p>
+        <p class="date">
+            Current Date: <span id="currentDate"></span>
+        </p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Scope One', 'Trocchi'
+                ]
+            }
+        });
+    </script>
+</body>
+
+</html>
