@@ -7,17 +7,13 @@
     <meta name="description" content="Lesson 6 for Angela Brunst in WDD 230: Web Frontend Development at Brigham Young University - Idaho">
     <title>The Weather Rock - Preston | Angela Brunst</title>
     <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/small.css" type="text/css">
-    <link rel="stylesheet" href="css/medium.css" type="text/css">
-    <link rel="stylesheet" href="css/large.css" type="text/css">
+    <link rel="stylesheet" href="css/medium.css" type="screen and (min-width:37.5em)">
+    <link rel="stylesheet" href="css/large.css" type="screen and (min-width:60em)">
 
 </head>
 
 <body onload="currentDate();">
-    <div id="eventBanner">
-        <script src="js/script.js"></script>
-    </div>
     <header>
         <picture class="logo">
             <img class="logo_img" src="images/logo200.png" alt="The Weather Rock logo">
@@ -78,7 +74,7 @@
             Current Date: <span id="currentDate"></span>
         </p>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
         WebFont.load({
@@ -89,6 +85,7 @@
             }
         });
     </script>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
 </body>
 
 </html>
