@@ -59,23 +59,12 @@
         grid-column: 2/3;
     }
     footer {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 4fr 1fr;
-    }
-    .map {
-        grid-column: 1;
-        grid-row: 1;
-        margin: 0 3em 0 3em;
+        display: flex;
     }
     .contactInfo {
-        grid-column: 2;
-        grid-row: 1;
         margin: 0 3em 0 3em;
     }
     .date {
-        grid-column: 1;
-        grid-row: 2;
         text-align: center;
     }
 }
