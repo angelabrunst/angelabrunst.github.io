@@ -103,9 +103,13 @@ h2 {
 }
 
 .logo_img {
-    max-width: 60%;
+    max-width: 80%;
     grid-column: 1;
     margin: 1em 0 0 .3em;
+}
+
+img {
+    width: auto;
 }
 
 .title {
