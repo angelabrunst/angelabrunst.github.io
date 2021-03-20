@@ -77,8 +77,5 @@ fetch(requestURL)
             card.appendChild(h3_3);
 
             document.querySelector('div.towns').appendChild(card);
-
-
-
         }
     });
