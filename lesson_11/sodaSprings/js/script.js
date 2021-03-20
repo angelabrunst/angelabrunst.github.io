@@ -68,7 +68,7 @@ const apiCurrentURL = "https://api.openweathermap.org/data/2.5/weather?lat=42.65
 fetch(apiCurrentURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        document.getElementById('current-temp').textContent = jsObject.main.temp;
+        document.getElementById('current-temp').textContent = jsObject.main.temp.toFixed(0);
         document.getElementById('humidity').textContent = jsObject.main.humidity;
         document.getElementById('wind-speed').textContent = jsObject.wind.speed;
     });
@@ -119,4 +119,33 @@ fetch(apiForecastURL)
                 i++;
             }
         }
+    });
+//Town Events API
+const apiEventsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+
+fetch(apiEventsURL)
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(jsonObject) {
+        console.table(jsonObject);
+        const towns = jsonObject['towns'];
+        const townsA = [0]
+        let card = document.createElement('section');
+        let h2 = document.createElement('h2');
+        let p_1 = document.createElement('p');
+        let p_2 = document.createElement('p');
+        let p_3 = document.createElement('p');
+
+        h2.textContent = towns[townsA].name + " Upcoming Events";
+        p_1.textContent = towns[townsA].events[0];
+        p_2.textContent = towns[townsA].events[1];
+        p_3.textContent = towns[townsA].events[2];
+
+        card.appendChild(h2);
+        card.appendChild(p_1);
+        card.appendChild(p_2);
+        card.appendChild(p_3);
+
+        document.querySelector('div.events').appendChild(card);
     });

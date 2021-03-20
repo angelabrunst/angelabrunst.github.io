@@ -180,6 +180,15 @@ tr img {
     width: 5rem;
 }
 
+.town-events {
+    margin: .7rem;
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #1F7A8C;
+    background-color: #E1E5F2;
+    box-shadow: 0 0 10px #111;
+}
+
 main article {
     margin: 2rem;
     padding: 2rem;
