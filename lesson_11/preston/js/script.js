@@ -68,7 +68,7 @@ const apiCurrentURL = "https://api.openweathermap.org/data/2.5/weather?id=560447
 fetch(apiCurrentURL)
     .then((response) => response.json())
     .then((jsObject) => {
-        document.getElementById('current-temp').textContent = jsObject.main.temp;
+        document.getElementById('current-temp').textContent = jsObject.main.temp.toFixed(0);
         document.getElementById('humidity').textContent = jsObject.main.humidity;
         document.getElementById('wind-speed').textContent = jsObject.wind.speed;
     });
@@ -98,23 +98,25 @@ fetch(apiForecastURL)
 
         var i = 1;
         for (var x = 0; x < jsForecast.list.length; x++) {
-            var temp = "forecastTemp" + i;
-            var icon = "forecastIcon" + i;
             if (jsForecast.list[x].dt_txt.includes("18:00:00")) {
-                document.getElementById(temp).textContent = jsForecast.list[x].main.temp;
+                let card = document.createElement('section');
+                let temp = document.createElement('p');
+                let img = document.createElement('img');
 
-                const imagesrc = 'https://openweathermap.org/img/w/' + jsForecast.list[x].weather[0].icon + '.png'; // note the concatenation
-                const desc = jsForecast.list[x].weather[0].description; // note how we reference the weather array
-                document.getElementById(icon).setAttribute('src', imagesrc); // focus on the setAttribute() method
-                document.getElementById(icon).setAttribute('alt', desc);
+                temp.textContent = jsForecast.list[x].main.temp.toFixed(0) + "\xB0 F";
+
+                const imagesrc = 'https://openweathermap.org/img/w/' + jsForecast.list[x].weather[0].icon + '.png';
+                const desc = jsForecast.list[x].weather[0].description;
+                img.setAttribute('src', imagesrc);
+                img.setAttribute('alt', desc);
+
+                card.appendChild(img);
+                card.appendChild(temp);
+
+
+                document.querySelector('div.fiveDay' + i).appendChild(card);
 
                 i++;
             }
-
         }
-        const imagesrc = 'https://openweathermap.org/img/w/' + jsForecast.list[6].weather[0].icon + '.png'; // note the concatenation
-        const desc = jsForecast.list[6].weather.description; // note how we reference the weather array
-        document.getElementById('forecast-icon1').setAttribute('src', imagesrc); // focus on the setAttribute() method
-        document.getElementById('forecast-icon1').setAttribute('alt', desc);
-
     });
