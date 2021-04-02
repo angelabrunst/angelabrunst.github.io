@@ -1,0 +1,98 @@
+@media only screen and (min-width: 37.5em) {
+     :root {
+        --color1: #907F47;
+        --color2: #CAB775;
+        --color3: #F1CABB;
+        --color4: #F3F3F3;
+    }
+    nav ul {
+        display: flex;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    nav a {
+        font-size: 1rem;
+    }
+    .navigation {
+        display: flex;
+    }
+    .navigation li {
+        display: block;
+        flex: 1 1 auto;
+    }
+    .navigation a {
+        text-align: center;
+    }
+    .navigation li:first-child {
+        display: none;
+    }
+    .logoImg {
+        margin: 0 1.5rem;
+    }
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 150px);
+    }
+    article {
+        grid-column: 1/5;
+        grid-row: 1/3;
+    }
+    .aboutUs {
+        margin: 1rem 2rem;
+    }
+    .btn {
+        margin-left: 5rem;
+    }
+    .business {
+        grid-column: 5/-1;
+        grid-row: 1/3;
+        margin: 1rem;
+    }
+    .business img {
+        width: 85%;
+    }
+    .weather {
+        grid-column: 1/-1;
+        grid-row: 3;
+        margin: 3rem;
+    }
+    .weather-cards {
+        grid-column: 1/-1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .currentW {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    forecastW {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .town-events {
+        grid-column: 1/-1;
+        grid-row: 5;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .contactInfo {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .socialMedia {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .footerTag {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    footer a {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+}

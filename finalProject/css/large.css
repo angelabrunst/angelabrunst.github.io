@@ -1,0 +1,37 @@
+@media only screen and (min-width: 60em) {
+     :root {
+        --color1: #907F47;
+        --color2: #CAB775;
+        --color3: #F1CABB;
+        --color4: #F3F3F3;
+    }
+    nav a {
+        font-size: 2rem;
+    }
+    .logoImg {
+        margin: -1rem 6rem 0 7em;
+    }
+    .navImg {
+        margin: 0;
+        max-width: 100%;
+    }
+    .grid {
+        grid-template-rows: repeat(4, 200px);
+    }
+    .aboutUs {
+        margin: 1rem;
+        font-size: 1.25rem;
+    }
+    .btn {
+        margin-left: 15rem;
+    }
+    .business img {
+        max-width: 75%;
+    }
+    .weather {
+        font-size: 1.75rem;
+    }
+    .town-events {
+        font-size: 1.5rem
+    }
+}

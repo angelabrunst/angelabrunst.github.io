@@ -1,0 +1,130 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mesa Chamber of Commerce">
+    <title>Mesa Chamber of Commerce | Home</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/small.css" media="all">
+    <link rel="stylesheet" href="css/medium.css" media="screen and (min-width:37.5em)">
+    <link rel="stylesheet" href="css/large.css" media="screen and (min-width:60em)">
+    <script src="https://kit.fontawesome.com/877efa8544.js" crossorigin="anonymous"></script>
+    <script src="js/currentDate.js" defer></script>
+    <script src="js/progressiveLoad.js" defer></script>
+    <script src="js/toggle.js" defer></script>
+    <script src="js/forecastAPI.js" defer></script>
+    <script src="js/events.js" defer></script>
+
+</head>
+
+<body onload="threeDayForecast();">
+    <header>
+        <picture class="logo">
+            <source media="(max-width: 500px)" class="logoImg" srcset="images/mesaCoC300.png">
+            <img class="logoImg" data-src="images/mesaCoC.png" alt="Mesa Chamber of Commerce Logo">
+        </picture>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Mesa</a></li>
+                <li><a href="#">Membership</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <picture class="navImg">
+            <source media="(max-width: 500px)" class="navImg" srcset="images/mesaSunset500.jpg">
+            <source media="(max-width: 800px)" class="navImg" srcset="images/mesaSunset800.jpg">
+            <img class="navImg" data-src="images/mesaSunset1500.jpg" alt="Cactus at Sunset in Mesa">
+        </picture>
+    </header>
+    <main class="grid">
+        <article class="aboutUs">
+            <h3 class="articleHeader">About us</h3>
+            <p>In the past 100 years, Mesa has bloomed into a desert metropolis. The opportunities for a business to develop and grow is unprecedented.</p>
+            <p>At Mesa Chamber of Commerce, we focus on building meaningful networking moments that will propel a business to new levels of success. We believe that when the businesses around us succeed, we all succeed.</p>
+            <p>Join our community and enjoy our over 400 events and programs available through out the year. Joining Mesa Chamber of Commerce will help your business connect to the community and explore new client opportunities.</p>
+            <br>
+            <a href="#" class="btn">
+            Join Now
+            </a>
+        </article>
+        <div class="business">
+            <picture class="bus">
+                <img class="bus1" src="images/business1.jpg" alt="Mesa Trash and Recycling Services">
+            </picture>
+            <picture class="bus">
+                <img class="bus2" src="images/business2.jpg" alt="Ocean Air">
+            </picture>
+            <picture class="bus">
+                <img class="bus3" src="images/business3.jpg" alt="Lawyer services">
+            </picture>
+        </div>
+        <div class="weather">
+            <div class="weather-cards">
+                <div class="currentW w-card">
+                    <h3>Current Weather</h3>
+                </div>
+                <div class="forecastW w-card">
+                    <h3>Three Day Forecast</h3>
+                    <table class="forecast_table">
+                        <tr>
+                            <th>
+                                <div id="weekDay1"></div>
+                            </th>
+                            <th>
+                                <div id="weekDay2"></div>
+                            </th>
+                            <th>
+                                <div id="weekDay3"></div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class=threeDay1></div>
+                            </td>
+                            <td>
+                                <div class=threeDay2></div>
+                            </td>
+                            <td>
+                                <div class=threeDay3></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="town-events">
+            <div class="events"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="contactInfo">
+            <h3>Contact Us</h3>
+            <p>&#9993; mesachamberofcommerce@mesa.org</p>
+            <p>&#9742; 1-800-888-9000</p>
+        </div>
+        <div class="socialMedia">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <div class="footerTag">
+            <p id="updated">&copy; 2021 Angela Brunst | Last Updated: <span id="lastUpdate"></span>
+            </p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Spectral SC', 'Abel'
+                ]
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+</body>
+
+</html>

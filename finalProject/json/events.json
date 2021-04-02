@@ -1,0 +1,15 @@
+{
+    "towns": [{
+        "name": "Mesa",
+        "photo": "mesa.jpg",
+        "motto": "Better than Gilbert",
+        "yearFounded": 1878,
+        "currentPopulation": 600894,
+        "averageRainfall": 9.3,
+        "events": [
+            "April 9: 9am - Downtown Farmers Market",
+            "April 15: 5:30-9pm - Mesa's Feastival Forest",
+            "April 30: 9-11am - Falcon Field Flyover"
+        ]
+    }]
+}
