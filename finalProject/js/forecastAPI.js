@@ -1,18 +1,14 @@
 function threeDayForecast() {
     var d = new Date();
     var dayOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    console.log("checkpoint1")
     for (let i = 1; i < 6; i++) {
         let day = "weekDay" + i;
         let weekday = d.getDay() + i;
-        console.log("checkpoint2")
         if (weekday > 6) {
             weekday = weekday - 7;
             document.getElementById(day).innerHTML = dayOfWeek[weekday];
-            console.log("checkpoint3")
         } else {
             document.getElementById(day).innerHTML = dayOfWeek[weekday];
-            console.log("checkpoint4")
         }
     }
 }
