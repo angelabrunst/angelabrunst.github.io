@@ -3,6 +3,9 @@
     --color2: #CAB775;
     --color3: #F1CABB;
     --color4: #F3F3F3;
+    --level-one: translateZ(3rem);
+    --level-two: translateZ(6rem);
+    --level-three: translateZ(9rem);
 }
 
 body {
@@ -93,7 +96,7 @@ nav a:hover {
     justify-content: center;
 }
 
-main {
+.grid {
     display: block;
 }
 
@@ -124,15 +127,15 @@ main {
 }
 
 .bus1 {
-    margin: 1.5rem 0 .5rem 0;
+    margin: 1.5rem 0 .25rem 0;
 }
 
 .bus2 {
-    margin: .5rem 0;
+    margin: .25rem 0;
 }
 
 .bus3 {
-    margin: .5rem 0;
+    margin: .25rem 0;
 }
 
 .weather {
@@ -141,7 +144,10 @@ main {
 
 .weather-cards {
     display: block;
-    padding: 1rem;
+}
+
+.w-card {
+    margin: 2rem 0;
 }
 
 .forecast_table {
@@ -193,4 +199,229 @@ footer a {
 
 .footerTag {
     font-size: .75rem;
+}
+
+.gridMesa {
+    display: block;
+}
+
+.intro {
+    padding: 1rem;
+}
+
+.welcomeMesa {
+    text-align: center;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.mainContainer {
+    width: 350px;
+    margin: 1rem;
+}
+
+.thecard {
+    text-align: center;
+    position: relative;
+    padding: 15em 5em;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+}
+
+.mainContainer:hover .thecard {
+    transform: rotateY(.5turn);
+}
+
+.front,
+.back {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 5em 3em;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    display: grid;
+    align-content: center;
+}
+
+.front1 {
+    background-image: url(/angelabrunst.github.io/finalProject/images/history.jpg);
+}
+
+.front2 {
+    background-image: url(/angelabrunst.github.io/finalProject/images/growth.jpg);
+}
+
+.front3 {
+    background-image: url(/angelabrunst.github.io/finalProject/images/downtown.jpg);
+}
+
+.front {
+    background-size: cover;
+    background-blend-mode: overlay;
+    color: #333;
+}
+
+.front::before {
+    content: '';
+    position: absolute;
+    --spacer: 1em;
+    top: var(--spacer);
+    bottom: var(--spacer);
+    left: var(--spacer);
+    right: var(--spacer);
+    border: 3px solid currentColor;
+    transform: var(--level-one);
+}
+
+.title {
+    font-size: 2.5rem;
+    transform: var(--level-three);
+    color: white !important;
+}
+
+.body {
+    transform: var(--level-two);
+    font-weight: var(fw-normal);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.back {
+    transform: rotateY(.5turn);
+    background-image: linear-gradient(to bottom right, white, #CAB775);
+}
+
+.membershipTitle {
+    text-align: center;
+}
+
+.membershipLevels {
+    margin: 1rem;
+}
+
+form fieldset {
+    margin: 1rem 0;
+    border: 1px solid #907F47;
+    border-radius: 10px;
+    padding: .5rem 2%;
+}
+
+form legend {
+    color: var(--color2);
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+form label.top,
+form div {
+    display: block;
+    padding-top: 1rem;
+    color: #022B3A;
+    font-size: .8rem;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: var(--color4);
+}
+
+form label.sbs {
+    display: block;
+    padding: .75rem 0;
+    color: #555;
+}
+
+form input.submitBtn {
+    border: none;
+    background-color: var(--color2);
+    color: white;
+    border-radius: 10px;
+    padding: .75rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+.thanks {
+    text-align: center;
+    margin: 6rem;
+}
+
+.center {
+    text-align: center;
+    margin: .75rem;
+}
+
+.gridContact {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px 1fr 250px;
+}
+
+.board1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.board2 {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.board3 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.board4 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.board5 {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.board6 {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.contact {
+    grid-column: 1/-1;
+    grid-row: 3;
+}
+
+iframe {
+    grid-column: 1/-1;
+    grid-row: 4;
+    margin: 1rem;
+    max-width: 340px;
 }

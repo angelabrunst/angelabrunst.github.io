@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mesa Chamber of Commerce">
+    <title>Mesa Chamber of Commerce | Contact</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/small.css" media="all">
+    <link rel="stylesheet" href="css/medium.css" media="screen and (min-width:37.5em)">
+    <link rel="stylesheet" href="css/large.css" media="screen and (min-width:60em)">
+    <script src="https://kit.fontawesome.com/877efa8544.js" crossorigin="anonymous"></script>
+    <script src="js/currentDate.js" defer></script>
+    <script src="js/progressiveLoad.js" defer></script>
+    <script src="js/toggle.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <picture class="logo">
+            <source media="(max-width: 500px)" class="logoImg" srcset="images/mesaCoC300.png">
+            <img class="logoImg" data-src="images/mesaCoC.png" alt="Mesa Chamber of Commerce Logo">
+        </picture>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mesa.html">Mesa</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1 class="membershipTitle">Member Directory</h1>
+    </header>
+    <main>
+        <div class="cards"></div>
+    </main>
+    <footer>
+        <div class="contactInfo">
+            <h3>Contact Us</h3>
+            <p>&#9993; mesachamberofcommerce@mesa.org</p>
+            <p>&#9742; 1-800-888-9000</p>
+        </div>
+        <div class="socialMedia">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <div class="footerTag">
+            <p id="updated">&copy; 2021 Angela Brunst | Last Updated: <span id="lastUpdate"></span>
+            </p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Spectral SC', 'Abel'
+                ]
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mesa Chamber of Commerce">
+    <title>Mesa Chamber of Commerce | Membership</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/small.css" media="all">
+    <link rel="stylesheet" href="css/medium.css" media="screen and (min-width:37.5em)">
+    <link rel="stylesheet" href="css/large.css" media="screen and (min-width:60em)">
+    <script src="https://kit.fontawesome.com/877efa8544.js" crossorigin="anonymous"></script>
+    <script src="js/currentDate.js" defer></script>
+    <script src="js/progressiveLoad.js" defer></script>
+    <script src="js/toggle.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <picture class="logo">
+            <source media="(max-width: 500px)" class="logoImg" srcset="images/mesaCoC300.png">
+            <img class="logoImg" data-src="images/mesaCoC.png" alt="Mesa Chamber of Commerce Logo">
+        </picture>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mesa.html">Mesa</a></li>
+                <li><a href="membership.html" class="active">Membership</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="membershipTitle">Membership Benefits</h1>
+        <div class="membershipLevels">
+            <p>The Mesa Chamber of Commerce is a hub for meaningful growth of individual businesses. We’re built on the principle that a strong community is built upon a connected framework of thriving businesses. We build this framework by providing businesses
+                with the guidance and relationship opportunities they need to take their next step. Listening to their needs, we measure the pulse of what will help them thrive, then provide resources, training, networking, and legislative advocacy based
+                on that pulse.</p> <br>
+            <p>Strong businesses lead to a stronger community where people and families thrive together. The Mesa Chamber exists to facilitate that strength on behalf of every person who calls this their home.</p>
+        </div>
+        <h3 class="membershipTitle">Level Benefits</h3>
+        <div class="membershipLevels">
+            <h5>Non-profit - $100/month</h5>
+            <ul>
+                <li>Official Mesa Chamber of Commerce Membership Plaque & Window Decal</li>
+                <li>Limited use of the Mesa Chamber of Commerce logo on digital and print material (approval required)</li>
+                <li>Inclusion on the Mesa Chamber of Commerce online business directory</li>
+                <li>Inclusion on the Mesa Chamber of Commerce printed business directory</li>
+            </ul>
+        </div>
+        <div class="membershipLevels">
+            <h5>Bronze - $200/month</h5>
+            <ul>
+                <li>All Non-profit Membership benefits</li>
+                <li>Chamber referrals to your business/organization</li>
+                <li>Chamber business trainings</li>
+            </ul>
+        </div>
+        <div class="membershipLevels">
+            <h5>Silver - $400/month</h5>
+            <ul>
+                <li>All Bronze Membership benefits</li>
+                <li>Welcome post on social media featuring your logo (9000+ Follower reach)</li>
+                <li>Ability to add the Chamber as an event co-host on Facebook to increase exposure for your business events.</li>
+                <li>Ability to advertise 2x month in the Chamber’s weekly B2B newsletter (5000+ Subscriber reach)</li>
+            </ul>
+        </div>
+        <div class="membershipLevels">
+            <h5>Gold - $1000/month</h5>
+            <ul>
+                <li>All Silver Membership benefits</li>
+                <li>Luncheon tickets for all business leadership</li>
+                <li>Chamber referrals to your business/organization</li>
+                <li>Discounted advertisement and sponsorship opportunities (print and online)</li>
+                <li>Exclusive new member marketing discounts</li>
+            </ul>
+        </div>
+        <h3 class="membershipTitle">Membership Application</h3>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Your Information</legend>
+                <label class="top">First Name* <input type="text" name="fname" required pattern="[a-zA-Z\s]{5,}"></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Job Title <input type="text" name="jtitle"></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234" ></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="business@gmail.com" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Your Business Information</legend>
+                <label class="top">Business Name* <input type="text" name="bname" required></label>
+                <label class="top">Business Street Address <input type="text" name="address"></label>
+                <label class="top">Zip Code<input type="text" id="zip" name="zip" pattern="(\d{5}([\-]\d{4})?)"></label>
+                <label class="top">Business Website <input type="text" name="website" placeholder="yourbusiness.com"></label>
+                <label class="top">Business Type <input name="businessType" list="type"></label>
+                <datalist id="type">
+                    <option value="Automotive">
+                    <option value="Business Support & Supplies ">
+                    <option value="Computers & Electronics ">
+                    <option value="Construction & Contractors ">
+                    <option value="Education">
+                    <option value="Entertainment">
+                    <option value="Food & Dining">
+                    <option value="Health & Medicine">
+                    <option value="Home & Garden">
+                    <option value="Legal & Financial">
+                    <option value="Manufacturing, Wholesale & Distribution">
+                    <option value="Merchants (Retail)">
+                    <option value="Personal Care & Services">
+                    <option value="Real Estate">
+                    <option value="Travel & Transportation">
+                    <option value="Other">
+                </datalist>
+                <label class="top">Number of Employees <input type="number" step="1" pattern="\d+" name="employees"></label>
+            </fieldset>
+            <fieldset>
+                <h3>Mesa Chamber of Commerce Membership Level</h3>
+                <label class="sbs"><input type="radio" name="level" value="gold"> Gold</label>
+                <label class="sbs"><input type="radio" name="level" value="silver"> Silver</label>
+                <label class="sbs"><input type="radio" name="level" value="bronze"> Bronze</label>
+                <label class="sbs"><input type="radio" name="level" value="non_profit"> Non-profit</label>
+            </fieldset>
+            <input type="submit" value="Membership Request" class="submitBtn">
+        </form>
+    </main>
+    <footer>
+        <div class="contactInfo">
+            <h3>Contact Us</h3>
+            <p>&#9993; mesachamberofcommerce@mesa.org</p>
+            <p>&#9742; 1-800-888-9000</p>
+        </div>
+        <div class="socialMedia">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <div class="footerTag">
+            <p id="updated">&copy; 2021 Angela Brunst | Last Updated: <span id="lastUpdate"></span>
+            </p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Spectral SC', 'Abel'
+                ]
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+</body>
+
+</html>

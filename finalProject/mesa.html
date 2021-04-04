@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mesa Chamber of Commerce">
+    <title>Mesa Chamber of Commerce | Mesa</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/small.css" media="all">
+    <link rel="stylesheet" href="css/medium.css" media="screen and (min-width:37.5em)">
+    <link rel="stylesheet" href="css/large.css" media="screen and (min-width:60em)">
+    <script src="https://kit.fontawesome.com/877efa8544.js" crossorigin="anonymous"></script>
+    <script src="js/currentDate.js" defer></script>
+    <script src="js/progressiveLoad.js" defer></script>
+    <script src="js/toggle.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <picture class="logo">
+            <source media="(max-width: 500px)" class="logoImg" srcset="images/mesaCoC300.png">
+            <img class="logoImg" data-src="images/mesaCoC.png" alt="Mesa Chamber of Commerce Logo">
+        </picture>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mesa.html" class="active">Mesa</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="intro">
+            <h1 class="welcomeMesa">Welcome to Mesa</h1>
+            <p>
+                Mesa, Arizona is a boundless destination surrounded by the natural Sonoran Desert beauty of Tonto National Forest and the communities of Apache Junction, and Queen Creek. This regional recreation playground boasts an assortment of lifestyle and leisure
+                pursuits for businesses.
+            </p>
+        </div>
+        <div class="gridMesa">
+            <div class="mainContainer card1">
+                <div class="thecard">
+                    <div class="front front1">
+                        <h1 class="title">History</h1>
+                    </div>
+                    <div class="back">
+                        <p class="body">Mesa Arizona has a rich history that dates back nearly 2,000 years ago, when it was settled by the Hohokam people. These early settlers built a canal system that runs through the current city, making it the largest and most sophisticated
+                            in the prehistoric New World. The area was later populated by Mormon pioneers who extended the original canals, and turned the Sonoran Desert into an oasis.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mainContainer card2">
+                <div class="thecard">
+                    <div class="front front2">
+                        <h1 class="title">Growth</h1>
+                    </div>
+                    <div class="back">
+                        <p class="body">Mesa is currently the largest suburban city in the United States. Nearly half a million residents within the 139 square miles of city. Since 2010, the city has seen a growth rate of 22.57%.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mainContainer card3">
+                <div class="thecard">
+                    <div class="front front3">
+                        <h1 class="title">Downtown</h1>
+                    </div>
+                    <div class="back">
+                        <p class="body">Downtown Mesa is the city’s epicenter of business, government, arts, recreation and entertainment. Entrepreneurs will find an abundant opportunity for unique shops, diverse restaurants, coffee shops, breweries, a cidery, and much
+                            more all located within Mesa’s original square mile. Downtown Mesa is a photography lover’s dream with vintage and modern-day murals lining both sides of Main Street and the self-guided public art walk featuring the city’s
+                            36 permanent sculptures. The area is undergoing a resurgence of new development including extensive renovations at the Mesa Temple and new residential living options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="contactInfo">
+            <h3>Contact Us</h3>
+            <p>&#9993; mesachamberofcommerce@mesa.org</p>
+            <p>&#9742; 1-800-888-9000</p>
+        </div>
+        <div class="socialMedia">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <div class="footerTag">
+            <p id="updated">&copy; 2021 Angela Brunst | Last Updated: <span id="lastUpdate"></span>
+            </p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Spectral SC', 'Abel'
+                ]
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+</body>
+
+</html>

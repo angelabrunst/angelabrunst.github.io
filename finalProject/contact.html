@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Mesa Chamber of Commerce">
+    <title>Mesa Chamber of Commerce | Contact</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/small.css" media="all">
+    <link rel="stylesheet" href="css/medium.css" media="screen and (min-width:37.5em)">
+    <link rel="stylesheet" href="css/large.css" media="screen and (min-width:60em)">
+    <script src="https://kit.fontawesome.com/877efa8544.js" crossorigin="anonymous"></script>
+    <script src="js/currentDate.js" defer></script>
+    <script src="js/progressiveLoad.js" defer></script>
+    <script src="js/toggle.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <picture class="logo">
+            <source media="(max-width: 500px)" class="logoImg" srcset="images/mesaCoC300.png">
+            <img class="logoImg" data-src="images/mesaCoC.png" alt="Mesa Chamber of Commerce Logo">
+        </picture>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mesa.html">Mesa</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="membershipTitle">Board of Directors</h1>
+        <div class="gridContact">
+            <div class="board1 center">
+                <img id="board1" src="images/jared_langkilde.jpg" alt="Jared Langkilde">
+                <h5>Jared Langkilde</h5>
+            </div>
+            <div class="board2 center">
+                <img id="board2" src="images/jennifer_graves.jpg" alt="Jennifer Graves">
+                <h5>Jennifer Graves</h5>
+            </div>
+            <div class="board3 center">
+                <img id="board3" src="images/shannon_heinze.jpg" alt="Shannon Heinze">
+                <h5>Shannon Heinze</h5>
+            </div>
+            <div class="board4 center">
+                <img id="board4" src="images/Glenn-Kasprzyk.jpg" alt="Glenn Kasprzyk">
+                <h5>Glenn Kasprzyk</h5>
+            </div>
+            <div class="board5 center">
+                <img id="board5" src="images/craig_lohman.jpg" alt="Craig Lohman">
+                <h5>Craig Lohman</h5>
+            </div>
+            <div class="board6 center">
+                <img id="board6" src="images/bryan_vivian.jpg" alt="Brian Vivian">
+                <h5>Brian Vivian</h5>
+            </div>
+            <form class="contact" method="get" action="thanks2.html">
+                <fieldset>
+                    <legend>Contact Us</legend>
+                    <label class="top">First Name* <input type="text" name="fname" required pattern="[a-zA-Z\s]{5,}"></label>
+                    <label class="top">Last Name* <input type="text" name="lname" required></label>
+                    <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234" ></label>
+                    <label class="top">Email* <input type="email" name="email" placeholder="business@gmail.com" required></label>
+                    <label class="top">Comment 
+                    <textarea id="addInfo" name="addInfo" rows="4" cols="50"></textarea>
+                </label>
+                </fieldset>
+                <input type="submit" value="Membership Request" class="submitBtn">
+            </form>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13320.604568449335!2d-111.8278397!3d33.4193037!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3c6e3879c04f7088!2sMesa%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1617561576423!5m2!1sen!2sus"
+                width="380" height="225"></iframe>
+        </div>
+    </main>
+    <footer>
+        <div class="contactInfo">
+            <h3>Contact Us</h3>
+            <p>&#9993; mesachamberofcommerce@mesa.org</p>
+            <p>&#9742; 1-800-888-9000</p>
+        </div>
+        <div class="socialMedia">
+            <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram-square"></i></a>
+        </div>
+        <div class="footerTag">
+            <p id="updated">&copy; 2021 Angela Brunst | Last Updated: <span id="lastUpdate"></span>
+            </p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Spectral SC', 'Abel'
+                ]
+            }
+        });
+    </script>
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+</body>
+
+</html>
