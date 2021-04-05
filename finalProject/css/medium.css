@@ -132,4 +132,27 @@
         grid-row: 3;
         margin-left: 4rem;
     }
+    .viewStyle {
+        display: flex;
+        justify-content: center;
+        font-family: 'Spectral SC', serif;
+        font-weight: bolder;
+        margin: 0 2rem;
+    }
+    .viewStyle button {
+        border: none;
+        background-color: white;
+        color: var(--color2);
+        font-size: 2rem;
+    }
+    #businessCards.gridD {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+        height: 100%;
+        padding: 1rem;
+    }
+    #businessCards.gridD section {
+        width: 100%;
+    }
 }

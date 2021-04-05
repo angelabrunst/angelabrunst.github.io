@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Mesa Chamber of Commerce">
-    <title>Mesa Chamber of Commerce | Contact</title>
+    <title>Mesa Chamber of Commerce | Directory</title>
     <link rel="shortcut icon" href="images/favicon.png">
     <link rel="stylesheet" href="css/small.css" media="all">
     <link rel="stylesheet" href="css/medium.css" media="screen and (min-width:37.5em)">
@@ -14,6 +14,8 @@
     <script src="js/currentDate.js" defer></script>
     <script src="js/progressiveLoad.js" defer></script>
     <script src="js/toggle.js" defer></script>
+    <script src="js/business.js" defer></script>
+    <script src="js/listGrid.js"></script>
 
 </head>
 
@@ -36,7 +38,10 @@
         <h1 class="membershipTitle">Member Directory</h1>
     </header>
     <main>
-        <div class="cards"></div>
+        <div class="viewStyle">
+            <button onclick="toggleList()"><i class="fas fa-list"></i> List View</button><button onclick="toggleGrid()"><i class="fas fa-th-large"></i> Grid View</button>
+        </div>
+        <div id="businessCards" class="listD"></div>
     </main>
     <footer>
         <div class="contactInfo">

@@ -120,6 +120,11 @@ nav a:hover {
     padding: .50rem 7rem;
     margin: 1.5rem;
     box-shadow: 0 2px 10px gray;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-image: linear-gradient(to bottom right, white, #CAB775);
 }
 
 .bus {
@@ -358,6 +363,11 @@ form input.submitBtn {
     margin: 0 0 2rem 2%;
     width: 96%;
     max-width: 20rem;
+    cursor: pointer;
+}
+
+form input.submitBtn:hover {
+    background-image: linear-gradient(to bottom right, white, #CAB775);
 }
 
 form label.top input:required {
@@ -424,4 +434,18 @@ iframe {
     grid-row: 4;
     margin: 1rem;
     max-width: 340px;
+}
+
+.viewStyle {
+    display: none;
+}
+
+#businessCards section {
+    margin: 1rem auto;
+    padding: 1rem;
+    max-width: 90%;
+    box-shadow: 0 2px 10px gray;
+    border: 1px solid #907F47;
+    border-radius: 3px;
+    justify-content: center;
 }

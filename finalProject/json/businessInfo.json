@@ -1,0 +1,66 @@
+{
+    "businesses": [{
+            "company": "Bliss Realty & Investments",
+            "address": "8413 E Baseline Rd, STE 106 Mesa, Arizona 85209",
+            "phone": "(480) 215-6658",
+            "website": "www.marabenson.com",
+            "imageurl": "images/bliss.jpg"
+        },
+        {
+            "company": "Sun Snacks",
+            "address": "1833 W Main St, #120 Mesa, AZ 85201",
+            "phone": "(480) 833-2573",
+            "website": "https://www.sunsnackspopcorn.com",
+            "imageurl": "images/sunsnacks.png"
+        },
+        {
+            "company": "Arizona Golf Resort",
+            "address": "425 S Power Rd, #333 Mesa, AZ 85206",
+            "phone": "(480) 832-3202",
+            "website": "www.arizonagolfresort.com",
+            "imageurl": "images/golfResort.png"
+        },
+        {
+            "company": "Chick-fil-A at Power & McKellips",
+            "address": "6707 E. McKellips Rd Mesa, AZ 85215",
+            "phone": "(480) 641-1903",
+            "website": "www.cfarestaurant.com/powerandmckellips/",
+            "imageurl": "images/chickFilA.jpg"
+        },
+        {
+            "company": "Dolly Steamboat",
+            "address": "16802 N. Hwy 88 Tortilla Flat, AZ 85290",
+            "phone": "(480) 827-9144",
+            "website": "dollysteamboat.com",
+            "imageurl": "images/steamboat.png"
+        },
+        {
+            "company": "We Buy Houses Arizona",
+            "address": "1959 S Power Rd, Ste 103-256 Mesa, AZ 85206",
+            "phone": "(480) 444-2274",
+            "website": "WeBuyHousesArizona.com",
+            "imageurl": "images/weBuyHouses.jpg"
+        },
+        {
+            "company": "Empower Coffee Roasters",
+            "address": "1337 S Gilbert Rd, #120 Mesa, AZ 85204",
+            "phone": "(917) 324-7876",
+            "website": "https://empowercoffeeroasters.com/",
+            "imageurl": "images/Empower.png"
+        },
+        {
+            "company": "DoubleTree by Hilton Phoenix Mesa",
+            "address": "1011 W Holmes Ave. Mesa, AZ 85210",
+            "phone": "(480) 844-6014",
+            "website": "https://www.hilton.com/en/hotels/meswhdt-doubletree-phoenix-mesa/",
+            "imageurl": "images/doubleTree.jpg"
+        },
+        {
+            "company": "Four Points by Sheraton at Phoenix Mesa Gateway Airport",
+            "address": "6850 E Williams Field Rd Mesa, AZ 85212",
+            "phone": "(480) 579-2100",
+            "website": "https://www.marriott.com/hotels/travel/phxma-four-points-at-phoenix-mesa-gateway-airport/",
+            "imageurl": "images/fourPoints.jpg"
+        }
+    ]
+}

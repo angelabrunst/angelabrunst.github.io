@@ -71,6 +71,10 @@ fetch(forecastApiURL)
                 cardF.appendChild(imgF);
                 cardF.appendChild(tempF);
 
+                if (tempF > 110) {
+                    alert("Warning! Extreme heat wave in effect. Please seek shelter and stay hydrated.");
+                }
+
 
                 document.querySelector('div.threeDay' + i).appendChild(cardF);
 
