@@ -125,6 +125,8 @@ nav a:hover {
 
 .btn:hover {
     background-image: linear-gradient(to bottom right, white, #CAB775);
+    box-shadow: 0 10px 20px gray;
+    color: black;
 }
 
 .bus {
@@ -368,6 +370,8 @@ form input.submitBtn {
 
 form input.submitBtn:hover {
     background-image: linear-gradient(to bottom right, white, #CAB775);
+    box-shadow: 0 10px 20px gray;
+    color: black;
 }
 
 form label.top input:required {
