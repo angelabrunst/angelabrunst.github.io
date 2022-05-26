@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Asul&family=Shrikhand&display=swap');
 header {
-    background-color: #FFDDD2;
+    background-color: rgb(204, 164, 59, .2);
     color: #006D77;
     font-family: 'Shrikhand', cursive;
     text-align: center;
@@ -30,7 +30,7 @@ h2 {
 }
 
 footer {
-    background-color: #FFDDD2;
+    background-color: rgb(204, 164, 59, .2);
     color: #006D77;
     text-align: center;
     padding: 15px;
