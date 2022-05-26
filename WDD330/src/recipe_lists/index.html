@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Recipe Hutch | Recipe Lists</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <template id="recipe-card-template">
+        <li class="recipe-card">
+            <a href="../recipe_lists/index.html?recipe=">
+                <img src="" alt="Image of " />
+                <h2 class="recipe__name"></h2>
+            </a>
+        </li>
+    </template>
+    <!-- <script src="../js/recipeData.js" type="module"></script> -->
+</head>
+
+<body>
+    <header class="divider" id="main-header">
+        <a href="../index.html">
+            <h1>The Recipe Hutch</h1>
+        </a>
+
+    </header>
+    <main class="divider">
+        <div class="meal-search-box">
+            <input type="text" class="search-control" placeholder="Search Recipes" id="search-input">
+            <button type="submit" class="search-btn btn" id="search-btn">Search
+            </button>
+        </div>
+        </div>
+        <div class="meal-result">
+            <h2 class="title pageTitle">Top Recipes</h2>
+            <div class="recipe-list" id="meal">
+                <!-- List of recipe cards -->
+
+
+            </div>
+        </div>
+
+        <!-- recipe card modal -->
+        <div class="meal-details">
+            <button type="button" class="recipe-close-btn" id="recipe-close-btn">X</button>
+
+            <div class="meal-details-content">
+                <!-- recipe info -->
+            </div>
+        </div>
+
+    </main>
+    <footer id="main-footer">
+        &copy;By Angela Brunst 2022
+    </footer>
+    <script src="../js/recipeData.js"></script>
+</body>
+
+</html>
