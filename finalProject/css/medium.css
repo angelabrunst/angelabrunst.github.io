@@ -54,7 +54,7 @@
     .weather {
         grid-column: 1/-1;
         grid-row: 3;
-        margin: 3rem;
+        margin: 10rem;
     }
     .weather-cards {
         grid-column: 1/-1;

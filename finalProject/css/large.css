@@ -30,6 +30,7 @@
     }
     .weather {
         font-size: 1.75rem;
+        margin: 3em;
     }
     .town-events {
         font-size: 1.5rem
